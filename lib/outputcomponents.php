@@ -2089,12 +2089,10 @@ class html_writer {
      */
     public static function script($jscode, $url=null) {
         if ($jscode) {
-            $attributes = array('type'=>'text/javascript');
-            return self::tag('script', "\n//<![CDATA[\n$jscode\n//]]>\n", $attributes) . "\n";
+            return self::tag('script', "\n//<![CDATA[\n$jscode\n//]]>\n") . "\n";
 
         } else if ($url) {
-            $attributes = array('type'=>'text/javascript', 'src'=>$url);
-            return self::tag('script', '', $attributes) . "\n";
+            return self::tag('script', '', ['src' => $url]) . "\n";
 
         } else {
             return '';
@@ -3250,6 +3248,9 @@ class initials_bar implements renderable, templatable {
             $groupletter->url = $this->url->out(false, array($this->urlvar => $letter));
             if ($letter == $this->current) {
                 $groupletter->selected = $this->current;
+            }
+            if (!isset($data->group[$groupnumber])) {
+                $data->group[$groupnumber] = new stdClass();
             }
             $data->group[$groupnumber]->letter[] = $groupletter;
         }

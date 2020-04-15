@@ -43,6 +43,7 @@ $string['activityselect'] = 'Select this activity to be moved elsewhere';
 $string['activitysince'] = 'Activity since {$a}';
 $string['activitytypetitle'] = '{$a->activity} - {$a->type}';
 $string['activityweighted'] = 'Activity per user';
+$string['actionsfor'] = 'Actions for {$a}';
 $string['add'] = 'Add';
 $string['addactivity'] = 'Add an activity...';
 $string['addactivitytosection'] = 'Add an activity to section \'{$a}\'';
@@ -58,6 +59,7 @@ $string['addedtogroupnot'] = 'Not added to group "{$a}"';
 $string['addedtogroupnotenrolled'] = 'Not added to group "{$a}", because not enrolled in course';
 $string['addfilehere'] = 'Add file(s) here';
 $string['addinganew'] = 'Adding a new {$a}';
+$string['addnew'] = 'Add a new {$a}';
 $string['addinganewto'] = 'Adding a new {$a->what} to {$a->to}';
 $string['addingdatatoexisting'] = 'Adding data to existing';
 $string['additionalnames'] = 'Additional names';
@@ -174,6 +176,7 @@ $string['backtohome'] = 'Back to the site home';
 $string['backtopageyouwereon'] = 'Back to the page you were on';
 $string['backup'] = 'Backup';
 $string['backupactivehelp'] = 'Choose whether or not to do automated backups.';
+$string['backupadhocpending'] = 'Course backup adhoc task pending';
 $string['backupcancelled'] = 'Backup cancelled';
 $string['backupcoursefileshelp'] = 'If enabled then course files will be included in automated backups';
 $string['backupdate'] = 'Backup date';
@@ -244,6 +247,7 @@ $string['changesmadereallygoaway'] = 'You have made changes. Are you sure you wa
 $string['city'] = 'City/town';
 $string['cleaningtempdata'] = 'Cleaning temp data';
 $string['clear'] = 'Clear';
+$string['clearsearch'] = 'Clear search input';
 $string['clickhelpiconformoreinfo'] = '... continues ... Click on the help icon to read the full article';
 $string['clickhere'] = 'Click here ...';
 $string['clicktohideshow'] = 'Click to expand or collapse';
@@ -505,6 +509,7 @@ $string['description'] = 'Description';
 $string['descriptiona'] = 'Description: {$a}';
 $string['deselectall'] = 'Deselect all';
 $string['deselectnos'] = 'Deselect all \'No\'';
+$string['details'] = 'Details';
 $string['detailedless'] = 'Less detailed';
 $string['detailedmore'] = 'More detailed';
 $string['digitalminor'] = 'Digital minor';
@@ -520,7 +525,7 @@ $string['displayonpage'] = 'Display on page';
 $string['dndcourse'] = 'You can drag and drop this course to alter its sorting or to move it to another category.';
 $string['dndenabled_inbox'] = 'You can drag and drop files here to add them.';
 $string['dndnotsupported'] = 'Drag and drop upload not supported';
-$string['dndnotsupported_help'] = 'Your browser does not support drag and drop upload.<br />This feature is available in all recent versions of Chrome, Firefox and Safari, as well as Internet Explorer v10 and above.';
+$string['dndnotsupported_help'] = 'Your browser does not support drag and drop upload. This feature is available in all recent versions of Chrome, Firefox and Safari, as well as Internet Explorer v10 and above.';
 $string['dndnotsupported_insentence'] = 'drag and drop not supported';
 $string['dnduploadwithoutcontent'] = 'This upload does not have any content';
 $string['dndworkingfiletextlink'] = 'Drag and drop files, text or links onto course sections to upload them';
@@ -786,6 +791,7 @@ $string['eventcourseviewed'] = 'Course viewed';
 $string['eventdashboardreset'] = 'Dashboard reset';
 $string['eventdashboardsreset'] = 'Dashboards reset';
 $string['eventdashboardviewed'] = 'Dashboard viewed';
+$string['eventdatabasetextfieldcontentreplaced'] = 'Database global search and replace';
 $string['eventemailfailed'] = 'Email failed to send';
 $string['eventname'] = 'Event name';
 $string['eventrecentactivityviewed'] = 'Recent activity viewed';
@@ -796,6 +802,7 @@ $string['eventusercreated'] = 'User created';
 $string['eventuserdeleted'] = 'User deleted';
 $string['eventuserlistviewed'] = 'User list viewed';
 $string['eventuserloggedout'] = 'User logged out';
+$string['eventuserpasswordpolicyfailed'] = 'User password failed password policy';
 $string['eventuserpasswordupdated'] = 'User password updated';
 $string['eventuserprofileviewed'] = 'User profile viewed';
 $string['eventuserupdated'] = 'User updated';
@@ -856,6 +863,10 @@ $string['forcepasswordchange_help'] = 'If this checkbox is ticked, the user will
 $string['forcepasswordchangecheckfull'] = 'Are you absolutely sure you want to force a password change to {$a} ?';
 $string['forcepasswordchangenot'] = 'Could not force a password change to {$a}';
 $string['forcepasswordchangenotice'] = 'You must change your password to proceed.';
+$string['forcepasswordresetfailurenotice'] = 'Your current password no longer passes the set password policy. Please contact your Moodle administrator for assistance.
+   {$a}';
+$string['forcepasswordresetnotice'] = 'Your current password no longer passes the set password policy, you must reset your password to login.
+   {$a}';
 $string['forcetheme'] = 'Force theme';
 $string['forgotaccount'] = 'Lost password?';
 $string['forgotten'] = 'Forgotten your username or password?';
@@ -989,6 +1000,8 @@ $string['changedpassword'] = 'Changed password';
 $string['changepassword'] = 'Change password';
 $string['changessaved'] = 'Changes saved';
 $string['check'] = 'Check';
+$string['checks'] = 'Checks';
+$string['checksok'] = 'All \'{$a}\' checks ok';
 $string['checkall'] = 'Check all';
 $string['checkingbackup'] = 'Checking backup';
 $string['checkingcourse'] = 'Checking course';
@@ -1255,14 +1268,18 @@ $string['moddoesnotsupporttype'] = 'Module {$a->modname} does not support upload
 $string['modhide'] = 'Hide';
 $string['modshow'] = 'Show';
 $string['modvisible'] = 'Availability';
-$string['modvisible_help'] = 'If the availability is set to \'Show on course page\', the activity or resource is available to students (subject to any access restrictions which may be set).<br><br>
+$string['modvisible_help'] = 'If the availability is set to \'Show on course page\', the activity or resource is available to students (subject to any access restrictions which may be set).
+
 If the availability is set to \'Hide from students\', the activity or resource is only available to users with permission to view hidden activities (by default, users with the role of teacher or non-editing teacher).';
 $string['modvisiblewithstealth'] = 'Availability';
-$string['modvisiblewithstealth_help'] = 'If the availability is set to \'Show on course page\', the activity or resource is available to students (subject to any access restrictions which may be set).<br><br>
-If the availability is set to \'Hide from students\', the activity or resource is only available to users with permission to view hidden activities (by default, users with the role of teacher or non-editing teacher).<br><br>
+$string['modvisiblewithstealth_help'] = 'If the availability is set to \'Show on course page\', the activity or resource is available to students (subject to any access restrictions which may be set).
+
+If the availability is set to \'Hide from students\', the activity or resource is only available to users with permission to view hidden activities (by default, users with the role of teacher or non-editing teacher).
+
 If the course contains many activities or resources, the course page may be simplified by setting the availability to \'Make available but not shown on course page\'. In this case, a link to the activity or resource must be provided from elsewhere, such as from a page resource. The activity would still be listed in the gradebook and other reports.';
 $string['modvisiblehiddensection'] = 'Availability';
-$string['modvisiblehiddensection_help'] = 'If the availability is set to \'Hide from students\', the activity or resource is only available to users with permission to view hidden activities (by default, users with the role of teacher or non-editing teacher).<br><br>
+$string['modvisiblehiddensection_help'] = 'If the availability is set to \'Hide from students\', the activity or resource is only available to users with permission to view hidden activities (by default, users with the role of teacher or non-editing teacher).
+
 If the course contains many activities or resources, the course page may be simplified by setting the availability to \'Make available but not shown on course page\'. In this case, a link to the activity or resource must be provided from elsewhere, such as from a page resource. The activity would still be listed in the gradebook and other reports.';
 $string['moodlelogo'] = 'Moodle logo';
 $string['month'] = 'Month';
@@ -1278,6 +1295,7 @@ $string['moodleversion'] = 'Moodle version';
 $string['moodlerelease'] = 'Moodle release';
 $string['more'] = 'more';
 $string['morehelp'] = 'More help';
+$string['morehelpaboutmodule'] = 'More help about the {$a} module';
 $string['moreinfo'] = 'More info';
 $string['moreinformation'] = 'More information about this error';
 $string['moreprofileinfoneeded'] = 'Please tell us more about yourself';
@@ -1514,6 +1532,8 @@ $string['passwordforgotteninstructions'] = 'Your details must first be found in 
 $string['passwordforgotteninstructions2'] = 'To reset your password, submit your username or your email address below. If we can find you in the database, an email will be sent to your email address, with instructions how to get access again.';
 $string['passwordchanged'] = 'Password has been changed';
 $string['passwordnohelp'] = 'No help is available to find your lost password. Please contact your Moodle administrator.';
+$string['passwordpolicynomatch'] = 'Your current password no longer matches the set password policy.
+   {$a}';
 $string['passwordrecovery'] = 'Yes, help me log in';
 $string['passwordsdiffer'] = 'These passwords do not match';
 $string['passwordsent'] = 'Password has been sent';
@@ -1627,12 +1647,14 @@ $string['publicsitefileswarning2'] = 'Note: Files placed here can be accessed by
 $string['publicsitefileswarning3'] = 'Note: Files placed here can be accessed by anyone who knows (or can guess) the URL. <br />For security reasons, backup files should be saved in the secure backupdata folder only.';
 $string['question'] = 'Question';
 $string['questionsinthequestionbank'] = 'Questions in the question bank';
+$string['queued'] = 'Queued';
 $string['quotausage'] = 'You have currently used {$a->used} of your {$a->total} limit.';
 $string['readinginfofrombackup'] = 'Reading info from backup';
 $string['readme'] = 'README';
 $string['recentactivity'] = 'Recent activity';
 $string['recentactivityreport'] = 'Full report of recent activity...';
 $string['recipientslist'] = 'Recipients list';
+$string['recommended'] = 'Recommended';
 $string['recreatedcategory'] = 'Recreated category {$a}';
 $string['redirect'] = 'Redirect';
 $string['reducesections'] = 'Reduce the number of sections';
@@ -1658,7 +1680,11 @@ $string['registrationyes'] = 'Yes, notify me of new Moodle releases, security al
 $string['reject'] = 'Reject';
 $string['rejectdots'] = 'Reject...';
 $string['relativedatesmode'] = 'Relative dates mode';
-$string['relativedatesmode_help'] = 'Display course or activity dates relative to the user\'s start date in the course.<br />The user\'s course start date will be their enrolment start date, unless they are enrolled before the course begins in which case their start date will be the course start date.<br/><strong>WARNING: This is an experimental feature and not all activities may support it. Once the course has been created, this course setting can no longer be changed.</strong>';
+$string['relativedatesmode_help'] = 'Display course or activity dates relative to the user\'s start date in the course.
+
+The user\'s course start date will be their enrolment start date, unless they are enrolled before the course begins in which case their start date will be the course start date.
+
+WARNING: This is an experimental feature and not all activities may support it. Once the course has been created, this course setting can no longer be changed.';
 $string['relativedatesmode_warning'] = '<strong>Warning:</strong> Relative dates mode cannot be changed once the course has been created.';
 $string['reload'] = 'Reload';
 $string['remoteappuser'] = 'Remote {$a} User';
@@ -1704,6 +1730,7 @@ $string['resourcedisplayopen'] = 'Open';
 $string['resourcedisplaypopup'] = 'In pop-up';
 $string['resources'] = 'Resources';
 $string['resources_help'] = 'Resource types enable almost any kind of web content to be inserted into the course.';
+$string['resultsfound'] = '{$a} results found';
 $string['restore'] = 'Restore';
 $string['restorecancelled'] = 'Restore cancelled';
 $string['restorecannotassignroles'] = 'Restore needs to assign roles and you do not have permission to do so';
@@ -1769,6 +1796,7 @@ $string['search_help'] = 'For basic searching of one or more words anywhere in t
 
 For advanced searching, press the search button without typing anything in the search box to access the advanced search form.';
 $string['searchagain'] = 'Search again';
+$string['searchactivities'] = 'Search for activities by name or description';
 $string['searchbyemail'] = 'Search by email address';
 $string['searchbyusername'] = 'Search by username';
 $string['searchcourses'] = 'Search courses';
@@ -1840,6 +1868,7 @@ $string['shortnameuser'] = 'User short name';
 $string['shortsitename'] = 'Short name for site (eg single word)';
 $string['show'] = 'Show';
 $string['showactions'] = 'Show actions';
+$string['showadvancededitor'] = 'Advanced';
 $string['showadvancedsettings'] = 'Show advanced settings';
 $string['showall'] = 'Show all {$a}';
 $string['showallcourses'] = 'Show all courses';
@@ -1961,6 +1990,12 @@ $string['statsuserreads'] = 'Views';
 $string['statsuserwrites'] = 'Posts';
 $string['statswrites'] = 'Posts';
 $string['status'] = 'Status';
+$string['statuscritical'] = 'Critical';
+$string['statusinfo'] = 'Info';
+$string['statusna'] = 'N/A';
+$string['statusok'] = 'OK';
+$string['statuserror'] = 'Error';
+$string['statuswarning'] = 'Warning';
 $string['stringsnotset'] = 'The following strings are not defined in {$a}';
 $string['studentnotallowed'] = 'Sorry, but you can not enter this course as \'{$a}\'';
 $string['students'] = 'Students';
@@ -2000,6 +2035,7 @@ If \'plain text area\' is selected, a format for text input areas such as HTML o
 The list of available text editors is determined by the site administrator.';
 $string['texteditor'] = 'Use standard web forms';
 $string['textformat'] = 'Plain text format';
+$string['textellipsis'] = '{$a}...';
 $string['timesplitting:deciles'] = 'Last tenth';
 $string['timesplitting:deciles_help'] = 'This analysis interval divides the course into tenths (10 equal parts), with each prediction being based on the data of only the most recent previous tenth.';
 $string['timesplitting:decilesaccum'] = 'All previous tenths';
@@ -2047,6 +2083,7 @@ $string['tocontent'] = 'To item "{$a}"';
 $string['today'] = 'Today';
 $string['todaylogs'] = 'Today\'s logs';
 $string['toeveryone'] = 'to everyone';
+$string['toggleemojipicker'] = 'Toggle emoji picker';
 $string['toomanybounces'] = 'That email address has had too many bounces. You <b>must</b> change it to continue.';
 $string['toomanytags'] = 'This search included too many tags; some will have been ignored.';
 $string['toomanytoshow'] = 'There are too many users to show.';

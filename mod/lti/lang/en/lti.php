@@ -210,7 +210,7 @@ In addition, all web service requests from the tool provider will use SSL.
 
 If using this option, confirm that this Moodle site and the tool provider support SSL.';
 $string['generaltool'] = 'General tool';
-$string['global_tool_types'] = 'Global preconfigured tools';
+$string['global_tool_types'] = 'Preconfigured tools';
 $string['grading'] = 'Grade routing';
 $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'The icon URL allows the icon that shows up in the course listing for this activity to be modified. Instead of using the default
@@ -254,8 +254,10 @@ real estate to the tool, and others provide a more integrated feel with the Mood
 $string['launchoptions'] = 'Launch options';
 $string['leaveblank'] = 'Leave blank if you do not need them';
 $string['lti'] = 'LTI';
-$string['lti:addinstance'] = 'Add a new external tool';
 $string['lti:addcoursetool'] = 'Add course-specific tool configurations';
+$string['lti:addmanualinstance'] = 'Add a manually-configured tool';
+$string['lti:addinstance'] = 'Add a new external tool';
+$string['lti:addpreconfiguredinstance'] = 'Add a preconfigured tool';
 $string['lti:grade'] = 'View grades returned by the external tool';
 $string['lti:manage'] = 'Be an Instructor when the tool is launched';
 $string['lti:admin'] = 'Be an administrator when the tool is launched';
@@ -328,10 +330,14 @@ $string['oauthsecurity'] = 'LTI 1.0/1.1';
 $string['optionalsettings'] = 'Optional settings';
 $string['organization'] = 'Organization details';
 $string['organizationdescr'] = 'Organization description';
-$string['organizationid'] = 'Organization ID';
-$string['organizationid_help'] = 'A unique identifier for this Moodle instance. Typically, the DNS name of the organization is used.
+$string['organizationid_default'] = 'Default organization ID';
+$string['siteid'] = 'Site ID';
+$string['sitehost'] = 'Site hostname';
+$string['organizationid_default_help'] = 'Default value to use for Organization ID. Site ID identifies this installation of moodle.';
+$string['organizationidguid'] = 'Organization ID';
+$string['organizationidguid_help'] = 'A unique identifier for this Moodle instance passed to the tool as the Platform Instance GUID.
 
-If this field is left blank, the host name of this Moodle site will be used as the default value.';
+If this field is left blank, the default value will be used.';
 $string['organizationurl'] = 'Organization URL';
 $string['organizationurl_help'] = 'The base URL of this Moodle instance.
 
@@ -574,3 +580,9 @@ $string['using_tool_cartridge'] = 'Using tool cartridge';
 $string['using_tool_configuration'] = 'Using tool configuration: ';
 $string['validurl'] = 'A valid URL must start with http(s)://';
 $string['viewsubmissions'] = 'View submissions and grading screen';
+
+// Deprecated since Moodle 3.9.
+$string['organizationid'] = 'Organization ID';
+$string['organizationid_help'] = 'A unique identifier for this Moodle instance. Typically, the DNS name of the organization is used.
+
+If this field is left blank, the host name of this Moodle site will be used as the default value.';

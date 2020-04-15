@@ -80,7 +80,7 @@ if ($chapterid == '0') { // Go to first chapter if no given.
     book_view($book, null, false, $course, $cm, $context);
 
     foreach ($chapters as $ch) {
-        if ($edit) {
+        if ($edit || ($ch->hidden && $viewhidden)) {
             $chapterid = $ch->id;
             break;
         }
@@ -132,7 +132,7 @@ $nexttitle = null;
 $navnexttitle = null;
 $last = null;
 foreach ($chapters as $ch) {
-    if (!$edit and $ch->hidden) {
+    if (!$edit and ($ch->hidden && !$viewhidden)) {
         continue;
     }
     if ($last == $chapter->id) {
@@ -222,7 +222,7 @@ $navclasses = book_get_nav_classes();
 
 if ($book->navstyle) {
     // Upper navigation.
-    echo '<div class="navtop clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
+    echo '<div class="navtop border-top py-3 clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
 }
 
 // The chapter itself.
@@ -251,7 +251,7 @@ if (core_tag_tag::is_enabled('mod_book', 'book_chapters')) {
 
 if ($book->navstyle) {
     // Lower navigation.
-    echo '<div class="navbottom clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
+    echo '<div class="navbottom py-3 border-bottom clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
 }
 
 echo $OUTPUT->footer();

@@ -30,6 +30,7 @@ define(['jquery', './tether', 'core/event', 'core/custom_interaction_events'], f
     M.util.js_pending('theme_boost/loader:children');
 
     require(['theme_boost/aria',
+            'theme_boost/scroll',
             'theme_boost/pending',
             'theme_boost/util',
             'theme_boost/alert',
@@ -42,12 +43,13 @@ define(['jquery', './tether', 'core/event', 'core/custom_interaction_events'], f
             'theme_boost/tab',
             'theme_boost/tooltip',
             'theme_boost/popover'],
-            function(Aria) {
+            function(Aria, MoodleScroll) {
 
         // We do twice because: https://github.com/twbs/bootstrap/issues/10547
         jQuery('body').popover({
             trigger: 'focus',
-            selector: "[data-toggle=popover][data-trigger!=hover]"
+            selector: "[data-toggle=popover][data-trigger!=hover]",
+            placement: 'auto'
         });
 
         // Popovers must close on Escape for accessibility reasons.
@@ -55,7 +57,8 @@ define(['jquery', './tether', 'core/event', 'core/custom_interaction_events'], f
             customEvents.events.escape,
         ]);
         jQuery('body').on(customEvents.events.escape, '[data-toggle=popover]', function() {
-            jQuery(this).popover('hide');
+            // Use "blur" instead of "popover('hide')" to prevent issue that the same tooltip can't be opened again.
+            jQuery(this).trigger('blur');
         });
 
         jQuery("html").popover({
@@ -68,7 +71,6 @@ define(['jquery', './tether', 'core/event', 'core/custom_interaction_events'], f
         });
 
         jQuery("html").tooltip({
-            container: "body",
             selector: '[data-toggle="tooltip"]'
         });
 
@@ -101,6 +103,8 @@ define(['jquery', './tether', 'core/event', 'core/custom_interaction_events'], f
         });
 
         Aria.init();
+        this.scroll = new MoodleScroll();
+        this.scroll.init();
         M.util.js_complete('theme_boost/loader:children');
     });
 

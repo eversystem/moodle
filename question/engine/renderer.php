@@ -118,7 +118,7 @@ class core_question_renderer extends plugin_renderer_base {
                 array('class' => 'comment clearfix'));
         $output .= html_writer::nonempty_tag('div',
                 $this->response_history($qa, $behaviouroutput, $qtoutput, $options),
-                array('class' => 'history clearfix'));
+                array('class' => 'history clearfix border p-2'));
 
         $output .= html_writer::end_tag('div');
         $output .= html_writer::end_tag('div');
@@ -323,21 +323,23 @@ class core_question_renderer extends plugin_renderer_base {
         if ($flagged) {
             $icon = 'i/flagged';
             $alt = get_string('flagged', 'question');
+            $label = get_string('clickunflag', 'question');
         } else {
             $icon = 'i/unflagged';
             $alt = get_string('notflagged', 'question');
+            $label = get_string('clickflag', 'question');
         }
         $attributes = array(
             'src' => $this->image_url($icon),
             'alt' => $alt,
+            'class' => 'questionflagimage',
         );
         if ($id) {
             $attributes['id'] = $id;
         }
         $img = html_writer::empty_tag('img', $attributes);
-        if ($flagged) {
-            $img .= ' ' . get_string('flagged', 'question');
-        }
+        $img .= html_writer::span($label);
+
         return $img;
     }
 

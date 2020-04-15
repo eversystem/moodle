@@ -2620,228 +2620,69 @@ function allow_switch() {
 }
 
 /**
- * Organise categories into a single parent category (called the 'Top' category) per context.
- *
- * @param array $categories List of question categories in the format of ["$categoryid,$contextid" => $category].
- * @param array $pcontexts List of context ids.
- * @return array
  * @deprecated since Moodle 3.5. MDL-61132
  */
-function question_add_tops($categories, $pcontexts) {
-    debugging('question_add_tops() has been deprecated. You may want to pass $top = true to get_categories_for_contexts().',
-            DEBUG_DEVELOPER);
-
-    $topcats = array();
-    foreach ($pcontexts as $contextid) {
-        $topcat = question_get_top_category($contextid, true);
-        $context = context::instance_by_id($contextid);
-
-        $newcat = new stdClass();
-        $newcat->id = "{$topcat->id},$contextid";
-        $newcat->name = get_string('topfor', 'question', $context->get_context_name(false));
-        $newcat->parent = 0;
-        $newcat->contextid = $contextid;
-        $topcats["{$topcat->id},$contextid"] = $newcat;
-    }
-    // Put topcats in at beginning of array - they'll be sorted into different contexts later.
-    return array_merge($topcats, $categories);
+function question_add_tops() {
+    throw new coding_exception(
+        'question_add_tops() has been removed. You may want to pass $top = true to get_categories_for_contexts().'
+    );
 }
 
 /**
- * Checks if the question category is the highest-level category in the context that can be edited, and has no siblings.
- *
- * @param int $categoryid a category id.
- * @return bool
  * @deprecated since Moodle 3.5. MDL-61132
  */
-function question_is_only_toplevel_category_in_context($categoryid) {
-    debugging('question_is_only_toplevel_category_in_context() has been deprecated. '
-            . 'Please update your code to use question_is_only_child_of_top_category_in_context() instead.',
-            DEBUG_DEVELOPER);
-
-    return question_is_only_child_of_top_category_in_context($categoryid);
+function question_is_only_toplevel_category_in_context() {
+    throw new coding_exception('question_is_only_toplevel_category_in_context() has been removed. '
+            . 'Please update your code to use question_is_only_child_of_top_category_in_context() instead.');
 }
 
 /**
- * Moves messages from a particular user from the message table (unread messages) to message_read
- * This is typically only used when a user is deleted
- *
- * @param object $userid User id
- * @return boolean success
  * @deprecated since Moodle 3.5
  */
-function message_move_userfrom_unread2read($userid) {
-    debugging('message_move_userfrom_unread2read() is deprecated and is no longer used.', DEBUG_DEVELOPER);
-
-    global $DB;
-
-    // Move all unread messages from message table to message_read.
-    if ($messages = $DB->get_records_select('message', 'useridfrom = ?', array($userid), 'timecreated')) {
-        foreach ($messages as $message) {
-            message_mark_message_read($message, 0); // Set timeread to 0 as the message was never read.
-        }
-    }
-    return true;
+function message_move_userfrom_unread2read() {
+    throw new coding_exception('message_move_userfrom_unread2read() has been removed.');
 }
 
 /**
- * Retrieve users blocked by $user1
- *
- * @param object $user1 the user whose messages are being viewed
- * @param object $user2 the user $user1 is talking to. If they are being blocked
- *                      they will have a variable called 'isblocked' added to their user object
- * @return array the users blocked by $user1
  * @deprecated since Moodle 3.5
  */
-function message_get_blocked_users($user1=null, $user2=null) {
-    debugging('message_get_blocked_users() is deprecated, please use \core_message\api::get_blocked_users() instead.',
-        DEBUG_DEVELOPER);
-
-    global $USER;
-
-    if (empty($user1)) {
-        $user1 = new stdClass();
-        $user1->id = $USER->id;
-    }
-
-    return \core_message\api::get_blocked_users($user1->id);
+function message_get_blocked_users() {
+    throw new coding_exception(
+        'message_get_blocked_users() has been removed, please use \core_message\api::get_blocked_users() instead.'
+    );
 }
 
 /**
- * Retrieve $user1's contacts (online, offline and strangers)
- *
- * @param object $user1 the user whose messages are being viewed
- * @param object $user2 the user $user1 is talking to. If they are a contact
- *                      they will have a variable called 'iscontact' added to their user object
- * @return array containing 3 arrays. array($onlinecontacts, $offlinecontacts, $strangers)
  * @deprecated since Moodle 3.5
  */
-function message_get_contacts($user1=null, $user2=null) {
-    debugging('message_get_contacts() is deprecated and is no longer used.', DEBUG_DEVELOPER);
-
-    global $DB, $CFG, $USER;
-
-    if (empty($user1)) {
-        $user1 = $USER;
-    }
-
-    if (!empty($user2)) {
-        $user2->iscontact = false;
-    }
-
-    $timetoshowusers = 300; // Seconds default.
-    if (isset($CFG->block_online_users_timetosee)) {
-        $timetoshowusers = $CFG->block_online_users_timetosee * 60;
-    }
-
-    // Rime which a user is counting as being active since.
-    $timefrom = time() - $timetoshowusers;
-
-    // People in our contactlist who are online.
-    $onlinecontacts  = array();
-    // People in our contactlist who are offline.
-    $offlinecontacts = array();
-    // People who are not in our contactlist but have sent us a message.
-    $strangers       = array();
-
-    // Get all in our contact list who are not blocked in our and count messages we have waiting from each of them.
-    $rs = \core_message\api::get_contacts_with_unread_message_count($user1->id);
-    foreach ($rs as $rd) {
-        if ($rd->lastaccess >= $timefrom) {
-            // They have been active recently, so are counted online.
-            $onlinecontacts[] = $rd;
-
-        } else {
-            $offlinecontacts[] = $rd;
-        }
-
-        if (!empty($user2) && $user2->id == $rd->id) {
-            $user2->iscontact = true;
-        }
-    }
-
-    // Get messages from anyone who isn't in our contact list and count the number of messages we have from each of them.
-    $rs = \core_message\api::get_non_contacts_with_unread_message_count($user1->id);
-    // Add user id as array index, so supportuser and noreply user don't get duplicated (if they are real users).
-    foreach ($rs as $rd) {
-        $strangers[$rd->id] = $rd;
-    }
-
-    // Add noreply user and support user to the list, if they don't exist.
-    $supportuser = core_user::get_support_user();
-    if (!isset($strangers[$supportuser->id]) && !$supportuser->deleted) {
-        $supportuser->messagecount = message_count_unread_messages($USER, $supportuser);
-        if ($supportuser->messagecount > 0) {
-            $strangers[$supportuser->id] = $supportuser;
-        }
-    }
-
-    $noreplyuser = core_user::get_noreply_user();
-    if (!isset($strangers[$noreplyuser->id]) && !$noreplyuser->deleted) {
-        $noreplyuser->messagecount = message_count_unread_messages($USER, $noreplyuser);
-        if ($noreplyuser->messagecount > 0) {
-            $strangers[$noreplyuser->id] = $noreplyuser;
-        }
-    }
-
-    return array($onlinecontacts, $offlinecontacts, $strangers);
+function message_get_contacts() {
+    throw new coding_exception('message_get_contacts() has been removed.');
 }
 
 /**
- * Mark a single message as read
- *
- * @param stdClass $message An object with an object property ie $message->id which is an id in the message table
- * @param int $timeread the timestamp for when the message should be marked read. Usually time().
- * @param bool $messageworkingempty Is the message_working table already confirmed empty for this message?
- * @return int the ID of the message in the messags table
  * @deprecated since Moodle 3.5
  */
-function message_mark_message_read($message, $timeread, $messageworkingempty=false) {
-    debugging('message_mark_message_read() is deprecated, please use \core_message\api::mark_message_as_read()
-        or \core_message\api::mark_notification_as_read().', DEBUG_DEVELOPER);
-
-    if (!empty($message->notification)) {
-        \core_message\api::mark_notification_as_read($message, $timeread);
-    } else {
-        \core_message\api::mark_message_as_read($message->useridto, $message, $timeread);
-    }
-
-    return $message->id;
-}
-
-
-/**
- * Checks if a user can delete a message.
- *
- * @param stdClass $message the message to delete
- * @param string $userid the user id of who we want to delete the message for (this may be done by the admin
- *  but will still seem as if it was by the user)
- * @return bool Returns true if a user can delete the message, false otherwise.
- * @deprecated since Moodle 3.5
- */
-function message_can_delete_message($message, $userid) {
-    debugging('message_can_delete_message() is deprecated, please use \core_message\api::can_delete_message() instead.',
-        DEBUG_DEVELOPER);
-
-    return \core_message\api::can_delete_message($userid, $message->id);
+function message_mark_message_read() {
+    throw new coding_exception('message_mark_message_read() has been removed, please use \core_message\api::mark_message_as_read()
+        or \core_message\api::mark_notification_as_read().');
 }
 
 /**
- * Deletes a message.
- *
- * This function does not verify any permissions.
- *
- * @param stdClass $message the message to delete
- * @param string $userid the user id of who we want to delete the message for (this may be done by the admin
- *  but will still seem as if it was by the user)
- * @return bool
  * @deprecated since Moodle 3.5
  */
-function message_delete_message($message, $userid) {
-    debugging('message_delete_message() is deprecated, please use \core_message\api::delete_message() instead.',
-        DEBUG_DEVELOPER);
+function message_can_delete_message() {
+    throw new coding_exception(
+        'message_can_delete_message() has been removed, please use \core_message\api::can_delete_message() instead.'
+    );
+}
 
-    return \core_message\api::delete_message($userid, $message->id);
+/**
+ * @deprecated since Moodle 3.5
+ */
+function message_delete_message() {
+    throw new coding_exception(
+        'message_delete_message() has been removed, please use \core_message\api::delete_message() instead.'
+    );
 }
 
 /**
@@ -3465,4 +3306,103 @@ function report_insights_context_insights(\context $context) {
         '\core_analytics\manager::cached_models_with_insights instead', DEBUG_DEVELOPER);
 
     return \core_analytics\manager::cached_models_with_insights($context);
+}
+
+/**
+ * Retrieve all metadata for the requested modules
+ *
+ * @deprecated since 3.9.
+ * @param object $course The Course
+ * @param array $modnames An array containing the list of modules and their
+ * names
+ * @param int $sectionreturn The section to return to
+ * @return array A list of stdClass objects containing metadata about each
+ * module
+ */
+function get_module_metadata($course, $modnames, $sectionreturn = null) {
+    global $OUTPUT;
+
+    debugging('get_module_metadata is deprecated. Please use \core_course\local\service\content_item_service instead.');
+
+    // get_module_metadata will be called once per section on the page and courses may show
+    // different modules to one another
+    static $modlist = array();
+    if (!isset($modlist[$course->id])) {
+        $modlist[$course->id] = array();
+    }
+
+    $return = array();
+    $urlbase = new moodle_url('/course/mod.php', array('id' => $course->id, 'sesskey' => sesskey()));
+    if ($sectionreturn !== null) {
+        $urlbase->param('sr', $sectionreturn);
+    }
+    foreach($modnames as $modname => $modnamestr) {
+        if (!course_allowed_module($course, $modname)) {
+            continue;
+        }
+        if (isset($modlist[$course->id][$modname])) {
+            // This module is already cached
+            $return += $modlist[$course->id][$modname];
+            continue;
+        }
+        $modlist[$course->id][$modname] = array();
+
+        // Create an object for a default representation of this module type in the activity chooser. It will be used
+        // if module does not implement callback get_shortcuts() and it will also be passed to the callback if it exists.
+        $defaultmodule = new stdClass();
+        $defaultmodule->title = $modnamestr;
+        $defaultmodule->name = $modname;
+        $defaultmodule->link = new moodle_url($urlbase, array('add' => $modname));
+        $defaultmodule->icon = $OUTPUT->pix_icon('icon', '', $defaultmodule->name, array('class' => 'icon'));
+        $sm = get_string_manager();
+        if ($sm->string_exists('modulename_help', $modname)) {
+            $defaultmodule->help = get_string('modulename_help', $modname);
+            if ($sm->string_exists('modulename_link', $modname)) {  // Link to further info in Moodle docs.
+                $link = get_string('modulename_link', $modname);
+                $linktext = get_string('morehelp');
+                $defaultmodule->help .= html_writer::tag('div',
+                    $OUTPUT->doc_link($link, $linktext, true), array('class' => 'helpdoclink'));
+            }
+        }
+        $defaultmodule->archetype = plugin_supports('mod', $modname, FEATURE_MOD_ARCHETYPE, MOD_ARCHETYPE_OTHER);
+
+        // Each module can implement callback modulename_get_shortcuts() in its lib.php and return the list
+        // of elements to be added to activity chooser.
+        $items = component_callback($modname, 'get_shortcuts', array($defaultmodule), null);
+        if ($items !== null) {
+            foreach ($items as $item) {
+                // Add all items to the return array. All items must have different links, use them as a key in the return array.
+                if (!isset($item->archetype)) {
+                    $item->archetype = $defaultmodule->archetype;
+                }
+                if (!isset($item->icon)) {
+                    $item->icon = $defaultmodule->icon;
+                }
+                // If plugin returned the only one item with the same link as default item - cache it as $modname,
+                // otherwise append the link url to the module name.
+                $item->name = (count($items) == 1 &&
+                    $item->link->out() === $defaultmodule->link->out()) ? $modname : $modname . ':' . $item->link;
+
+                // If the module provides the helptext property, append it to the help text to match the look and feel
+                // of the default course modules.
+                if (isset($item->help) && isset($item->helplink)) {
+                    $linktext = get_string('morehelp');
+                    $item->help .= html_writer::tag('div',
+                        $OUTPUT->doc_link($item->helplink, $linktext, true), array('class' => 'helpdoclink'));
+                }
+                $modlist[$course->id][$modname][$item->name] = $item;
+            }
+            $return += $modlist[$course->id][$modname];
+            // If get_shortcuts() callback is defined, the default module action is not added.
+            // It is a responsibility of the callback to add it to the return value unless it is not needed.
+            continue;
+        }
+
+        // The callback get_shortcuts() was not found, use the default item for the activity chooser.
+        $modlist[$course->id][$modname][$modname] = $defaultmodule;
+        $return[$modname] = $defaultmodule;
+    }
+
+    core_collator::asort_objects_by_property($return, 'title');
+    return $return;
 }

@@ -425,7 +425,7 @@ class mod_workshop_renderer extends plugin_renderer_base {
         }
 
         $table = new html_table();
-        $table->attributes['class'] = 'grading-report';
+        $table->attributes['class'] = 'grading-report table-striped table-hover';
 
         $sortbyfirstname = $this->helper_sortable_heading(get_string('firstname'), 'firstname', $options->sortby, $options->sorthow);
         $sortbylastname = $this->helper_sortable_heading(get_string('lastname'), 'lastname', $options->sortby, $options->sorthow);
@@ -988,19 +988,18 @@ class mod_workshop_renderer extends plugin_renderer_base {
      * @return string
      */
     protected function helper_sortable_heading($text, $sortid=null, $sortby=null, $sorthow=null) {
-        global $PAGE;
 
         $out = html_writer::tag('span', $text, array('class'=>'text'));
 
         if (!is_null($sortid)) {
             if ($sortby !== $sortid or $sorthow !== 'ASC') {
-                $url = new moodle_url($PAGE->url);
+                $url = new moodle_url($this->page->url);
                 $url->params(array('sortby' => $sortid, 'sorthow' => 'ASC'));
                 $out .= $this->output->action_icon($url, new pix_icon('t/sort_asc', get_string('sortasc', 'workshop')),
                     null, array('class' => 'iconsort sort asc'));
             }
             if ($sortby !== $sortid or $sorthow !== 'DESC') {
-                $url = new moodle_url($PAGE->url);
+                $url = new moodle_url($this->page->url);
                 $url->params(array('sortby' => $sortid, 'sorthow' => 'DESC'));
                 $out .= $this->output->action_icon($url, new pix_icon('t/sort_desc', get_string('sortdesc', 'workshop')),
                     null, array('class' => 'iconsort sort desc'));

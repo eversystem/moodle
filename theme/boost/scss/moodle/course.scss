@@ -1,10 +1,5 @@
 /* course.less */
 /* COURSE CONTENT */
-.section-modchooser-link img {
-    margin-right: 0.5rem;
-    width: 16px;
-    height: 16px;
-}
 
 .section_add_menus {
     text-align: right;
@@ -106,7 +101,7 @@ body:not(.editing)  .sitetopic ul.section {
         }
 
         .stealth {
-            @extend .text-muted;
+            color: $text-muted;
         }
         a.stealth,
         a.stealth:hover {
@@ -259,7 +254,7 @@ body:not(.editing)  .sitetopic ul.section {
 }
 
 .course-content .section-summary .section-summary-activities .activity-count {
-    @extend .text-muted;
+    color: $text-muted;
     font-size: $font-size-sm;
     margin: 3px;
     white-space: nowrap;
@@ -323,7 +318,7 @@ body:not(.editing)  .sitetopic ul.section {
     .sectionname > span,
     .content > div.summary,
     .activity .activityinstance {
-        @extend .text-muted;
+        color: $text-muted;
     }
 }
 
@@ -569,7 +564,7 @@ span.editinstructions {
 
 #coursesearch {
     margin-top: 1em;
-    text-align: center;
+    text-align: left;
 }
 
 #page-course-pending .pendingcourserequests {
@@ -905,11 +900,11 @@ span.editinstructions {
         }
         // The category or course is hidden.
         &[data-visible="0"] {
-            @extend .text-muted;
+            color: $text-muted;
 
             > div {
                 > a {
-                    @extend .text-muted;
+                    color: $text-muted;
                 }
 
                 .item-actions {
@@ -1057,7 +1052,7 @@ span.editinstructions {
         text-align: center;
 
         &.dimmed {
-            @extend .text-muted;
+            color: $text-muted;
             margin: 0.4rem 1rem 0.45rem;
         }
     }

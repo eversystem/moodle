@@ -35,12 +35,6 @@ use tool_usertours\manager;
 function xmldb_tool_usertours_upgrade($oldversion) {
     global $CFG, $DB;
 
-    // Automatically generated Moodle v3.3.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.4.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.5.0 release upgrade line.
     // Put any upgrade step following this.
 
@@ -63,6 +57,16 @@ function xmldb_tool_usertours_upgrade($oldversion) {
 
     // Automatically generated Moodle v3.7.0 release upgrade line.
     // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.8.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2020031900) {
+        // Updating shipped tours will fix broken sortorder records in existing tours.
+        manager::update_shipped_tours();
+
+        upgrade_plugin_savepoint(true, 2020031900, 'tool', 'usertours');
+    }
 
     return true;
 }

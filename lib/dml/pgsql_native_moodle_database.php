@@ -388,29 +388,18 @@ class pgsql_native_moodle_database extends moodle_database {
     }
 
     /**
-     * Returns detailed information about columns in table. This information is cached internally.
+     * Returns detailed information about columns in table.
+     *
      * @param string $table name
-     * @param bool $usecache
      * @return database_column_info[] array of database_column_info objects indexed with column names
      */
-    public function get_columns($table, $usecache=true) {
-        if ($usecache) {
-            if ($this->temptables->is_temptable($table)) {
-                if ($data = $this->get_temp_tables_cache()->get($table)) {
-                    return $data;
-                }
-            } else {
-                if ($data = $this->get_metacache()->get($table)) {
-                    return $data;
-                }
-            }
-        }
-
+    protected function fetch_columns(string $table): array {
         $structure = array();
 
         $tablename = $this->prefix.$table;
 
-        $sql = "SELECT a.attnum, a.attname AS field, t.typname AS type, a.attlen, a.atttypmod, a.attnotnull, a.atthasdef, d.adsrc
+        $sql = "SELECT a.attnum, a.attname AS field, t.typname AS type, a.attlen, a.atttypmod, a.attnotnull, a.atthasdef,
+                       CASE WHEN a.atthasdef THEN pg_catalog.pg_get_expr(d.adbin, d.adrelid) END AS adsrc
                   FROM pg_catalog.pg_class c
                   JOIN pg_catalog.pg_namespace as ns ON ns.oid = c.relnamespace
                   JOIN pg_catalog.pg_attribute a ON a.attrelid = c.oid
@@ -603,14 +592,6 @@ class pgsql_native_moodle_database extends moodle_database {
         }
 
         pg_free_result($result);
-
-        if ($usecache) {
-            if ($this->temptables->is_temptable($table)) {
-                $this->get_temp_tables_cache()->set($table, $structure);
-            } else {
-                $this->get_metacache()->set($table, $structure);
-            }
-        }
 
         return $structure;
     }
