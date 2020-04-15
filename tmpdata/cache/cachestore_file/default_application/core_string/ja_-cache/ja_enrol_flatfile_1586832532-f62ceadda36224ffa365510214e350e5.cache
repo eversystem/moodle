@@ -1,0 +1,22 @@
+a:26:{s:8:"encoding";s:36:"ファイルエンコーディング";s:13:"expiredaction";s:24:"登録期限切れ処理";s:18:"expiredaction_help";s:243:"ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除中に一部のユーザデータおよび設定がコースから削除されてしまうことに留意してください。";s:14:"filelockedmail";s:417:"ファイルベースのユーザ登録で使用しているテキストファイル ({$a}) はcron処理により削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。";s:21:"filelockedmailsubject";s:38:"重大なエラー: 登録ファイル";s:15:"flatfile:manage";s:39:"ユーザ登録を手動で管理する";s:16:"flatfile:unenrol";s:54:"ユーザをコースから手動で登録解除する";s:18:"flatfileenrolments";s:46:"フラットファイル (CSV) 登録です。";s:12:"flatfilesync";s:36:"フラットファイル登録同期";s:8:"location";s:30:"ファイルロケーション";s:13:"location_desc";s:126:"登録ファイルのフルパスを指定してください。処理の後、ファイルは自動的に削除されます。";s:11:"notifyadmin";s:24:"管理者に通知する";s:14:"notifyenrolled";s:36:"登録済みユーザに通知する";s:14:"notifyenroller";s:48:"登録に責任のあるユーザに通知する";s:34:"messageprovider:flatfile_enrolment";s:45:"フラットファイル登録メッセージ";s:7:"mapping";s:48:"フラットファイルロールマッピング";s:10:"pluginname";s:30:"フラットファイル (CSV)";s:15:"pluginname_desc";s:1069:"この方法ではあなたが指定した場所に置いた特別にフォーマットされたテキストファイルを繰り返しチェックおよび処理します。ファイルはカンマ区切りのファイルであり、1行あたり4個または6個のフィールドを持つと想定されます:
+
+処理, ロール, IDナンバー (ユーザ), IDナンバー (コース) [, 開始日時, 終了日時]
+
+詳細:
+
+* 処理 = add | del
+* ロール = student | teacher | teacheredit
+* IDナンバー (ユーザ) = userテーブルのidnumber (idではなく)
+* IDナンバー (コース) = courseテーブルのidnumber (idではなく)
+* 開始日時 = 開始日時 (UNIXエポックからの秒数) - 任意
+* 終了日時 = 終了日時 (UNIXエポックからの秒数) - 任意
+
+ファイルのフォーマットは以下のようになります:
+<pre class="informationbox">
+add, student, 5, CF101
+add, teacher, 6, CF101
+add, teacheredit, 7, CF101
+del, student, 8, CF101
+del, student, 17, CF101
+add, student, 21, CF101, 1091115000, 1091215000
+</pre>";s:31:"privacy:metadata:enrol_flatfile";s:150:"フラットファイル (CSV) 登録プラグインは将来的なenrol_flatfileテーブルの登録に関する個人データを保存します。";s:38:"privacy:metadata:enrol_flatfile:action";s:54:"所与の日付に期待される登録処理です。";s:40:"privacy:metadata:enrol_flatfile:courseid";s:41:"登録に関連するコースIDです。";s:38:"privacy:metadata:enrol_flatfile:roleid";s:71:"割り当てまたは割り当て解除されるロールのIDです。";s:41:"privacy:metadata:enrol_flatfile:timestart";s:27:"登録開始日時です。";s:39:"privacy:metadata:enrol_flatfile:timeend";s:27:"登録終了日時です。";s:44:"privacy:metadata:enrol_flatfile:timemodified";s:27:"登録修正日時です。";s:38:"privacy:metadata:enrol_flatfile:userid";s:59:"ロール割り当てに関連するユーザのIDです。";}

@@ -1,0 +1,8 @@
+a:19:{s:6:"apikey";s:9:"APIキー";s:11:"callbackurl";s:21:"コールバックURL";s:15:"callbackurltext";s:265:"<ol>
+<li>再度、<a href="http://www.flickr.com/services/api/keys/">Flickr APIキー</a>にアクセスしてください。</li>
+<li>このFlickrキーにコールバックURL <strong>{$a}</strong> を設定したかどうか確認してください。</li>
+</ol>";s:15:"callbackwarning";s:592:"<ol>
+<li>あなたのMoodleサイトに<a href="http://www.flickr.com/services/api/keys/">Flickr APIキーおよびSecret</a>を取得してください。</li>
+<li>これら詳細を入力した後、「保存」ボタンをクリックしてください。「設定」をクリックすることでこのページに戻ります。あなたにはMoodleが生成したコールバックURLが表示されます。</li>
+<li>あなたの<a href="http://www.flickr.com/services/api/keys/">Flickrキー</a>詳細を編集した後、コールバックURLを設定してください。</li>
+</ol>";s:12:"configplugin";s:12:"Flickr設定";s:12:"emailaddress";s:21:"メールアドレス";s:11:"flickr:view";s:36:"Flickrリポジトリを表示する";s:12:"invalidemail";s:45:"無効なFlickrメールアドレスです。";s:7:"notitle";s:18:"タイトルなし";s:13:"nullphotolist";s:51:"このアカウントの写真はありません。";s:8:"remember";s:33:"次回から入力を省略する";s:15:"pluginname_help";s:28:"flickr.comのリポジトリ";s:10:"pluginname";s:6:"Flickr";s:6:"secret";s:9:"秘密鍵";s:8:"username";s:30:"Flickrアカウントメール";s:34:"privacy:metadata:repository_flickr";s:177:"Flickrリポジトリプラグインはユーザプリファレンスを保存します。また、ユーザデータをMoodleからリモートシステムに転送します。";s:39:"privacy:metadata:repository_flickr:text";s:66:"Flickrリポジトリユーザ検索テキストクエリです。";s:76:"privacy:metadata:repository_flickr:preference:repository_flickr_access_token";s:71:"FlickrリポジトリのOAuthトークンプリファレンスです。";s:83:"privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret";s:152:"FlickrリポジトリのOAuth秘密鍵プリファレンスです。これはプライバシーデータのエクスポートから除外されます。";}

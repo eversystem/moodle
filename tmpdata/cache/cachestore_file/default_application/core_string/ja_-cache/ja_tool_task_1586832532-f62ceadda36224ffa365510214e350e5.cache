@@ -1,0 +1,26 @@
+a:39:{s:4:"asap";s:9:"早急に";s:20:"backtoscheduledtasks";s:36:"スケジュールタスクに戻る";s:8:"blocking";s:18:"ブロッキング";s:25:"cannotfindthepathtothecli";s:217:"実行可能なPHP CLIパスを見つけることができないため、タスクの実行は中断されました。サイト管理/サーバ/システムパスで「PHP CLIのパス」を設定してください。";s:22:"clearfaildelay_confirm";s:197:"本当にタスク「 {$a} 」の失敗時の待機をクリアしてもよろしいですか? 待機をクリアした後、タスクは通常のスケジュールに従って実行されます。";s:9:"component";s:21:"コンポーネント";s:13:"corecomponent";s:6:"コア";s:7:"default";s:15:"デフォルト";s:8:"disabled";s:6:"無効";s:13:"disabled_help";s:148:"無効にされたスケジュールタスクはcronにより実行されません。CLIツール経由で手動実行することはできます。";s:16:"edittaskschedule";s:48:"スケジュールタスクを編集する: {$a}";s:12:"enablerunnow";s:72:"スケジュールタスクの「今すぐ実行する」を許可する";s:17:"enablerunnow_desc";s:431:"定期的な実行を待つのではなく、管理者が個別のスケジュールタスクを今すぐ実行できるようにします。この機能ではシステムパスに「PHP CLIのパス」 (pathtophp) を設定する必要があります。タスクはウェブサーバ上で実行されるため、潜在的なパフォーマンスの問題を避ける目的でこの機能を無効にしてもよいでしょう。";s:9:"faildelay";s:18:"失敗時の待機";s:11:"lastruntime";s:12:"最新実行";s:11:"nextruntime";s:12:"次の実行";s:14:"plugindisabled";s:21:"プラグイン無効";s:10:"pluginname";s:33:"スケジュールタスク設定";s:19:"resettasktodefaults";s:66:"スケジュールタスクをデフォルトにリセットする";s:24:"resettasktodefaults_help";s:159:"これによりローカルの変更すべてが破棄されます。また、このタスクのスケジュールはオリジナル設定に戻されます。";s:6:"runnow";s:21:"今すぐ実行する";s:14:"runnow_confirm";s:170:"本当にタスク「 {$a} 」を今すぐ実行してもよろしいですか? タスクはウェブサーバ上で実行されて完了までに時間を要します。";s:10:"runpattern";s:18:"実行パターン";s:14:"scheduledtasks";s:27:"スケジュールタスク";s:28:"scheduledtaskchangesdisabled";s:87:"スケジュールタスク一覧の修正はMoodle設定で禁止されています。";s:12:"taskdisabled";s:15:"タスク無効";s:8:"tasklogs";s:15:"タスクログ";s:15:"taskscheduleday";s:3:"日";s:20:"taskscheduleday_help";s:320:"タスクスケジュールの日フィールドです。フィールドはunix cronと同じフォーマットを使用します。以下、いくつかの例です:
+
+* <strong>*</strong> 毎日
+* <strong>*/2</strong> 2日おき
+* <strong>1</strong> 毎月の初日
+* <strong>1,15</strong> 毎月の初日および15日";s:21:"taskscheduledayofweek";s:6:"曜日";s:26:"taskscheduledayofweek_help";s:320:"タスクスケジュールの曜日フィールドです。フィールドはunix cronと同じフォーマットを使用します。以下、いくつかの例です:
+
+* <strong>*</strong> 毎日
+* <strong>0</strong> 毎日曜日
+* <strong>6</strong> 毎土曜日
+* <strong>1,5</strong> 毎月曜日および金曜日";s:16:"taskschedulehour";s:3:"時";s:21:"taskschedulehour_help";s:385:"タスクスケジュールの時フィールドです。フィールドはunix cronと同じフォーマットを使用します。以下、いくつかの例です:
+
+* <strong>*</strong> 毎時
+* <strong>*/2</strong> 2時間おき
+* <strong>2-10</strong> 午前2時から午前10時までの毎時 (両方を含む)
+* <strong>2,6,9</strong> 午前2時、午前6時および午前9時";s:18:"taskscheduleminute";s:3:"分";s:23:"taskscheduleminute_help";s:349:"タスクスケジュールの分フィールドです。フィールドはunix cronと同じフォーマットを使用します。以下、いくつかの例です:
+
+* <strong>*</strong> 毎分
+* <strong>*/5</strong> 5分おき
+* <strong>2-10</strong> 毎時2分から10分 (両方を含む)
+* <strong>2,6,9</strong> 毎時2分、6分および9分";s:17:"taskschedulemonth";s:3:"月";s:22:"taskschedulemonth_help";s:298:"タスクスケジュールの月フィールドです。フィールドはunix cronと同じフォーマットを使用します。以下、いくつかの例です:
+
+* <strong>*</strong> 毎月
+* <strong>*/2</strong> 隔月
+* <strong>1</strong> 毎1月
+* <strong>1,5</strong> 毎1月および5月";s:16:"privacy:metadata";s:102:"スケジュールタスク設定プラグインはいかなる個人データも保存しません。";s:8:"viewlogs";s:29:"{$a} のログを表示する";}

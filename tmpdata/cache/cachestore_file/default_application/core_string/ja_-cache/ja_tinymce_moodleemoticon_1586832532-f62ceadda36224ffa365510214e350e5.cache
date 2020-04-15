@@ -1,0 +1,1 @@
+a:5:{s:10:"pluginname";s:36:"エモーティコンを書き込む";s:15:"requireemoticon";s:51:"エモーティコンフィルタを必要とする";s:20:"requireemoticon_desc";s:204:"この設定を有効にした場合、エディタコンテクスト内でエモーティコンフィルタが有効にされている場合のみ、エモーティコンボタンが表示されます。";s:19:"moodleemoticon:desc";s:36:"エモーティコンを書き込む";s:16:"privacy:metadata";s:103:"MoodleエモーティコンTinyMCEプラグインはいかなる個人データも保存しません。";}

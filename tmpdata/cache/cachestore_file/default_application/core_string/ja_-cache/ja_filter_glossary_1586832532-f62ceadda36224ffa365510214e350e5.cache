@@ -1,0 +1,1 @@
+a:4:{s:16:"glossarycategory";s:43:"{$a->glossary}: カテゴリ {$a->category}";s:15:"glossaryconcept";s:29:"{$a->glossary}: {$a->concept}";s:10:"filtername";s:24:"用語集自動リンク";s:16:"privacy:metadata";s:93:"用語集自動リンクプラグインはいかなる個人データも保存しません。";}

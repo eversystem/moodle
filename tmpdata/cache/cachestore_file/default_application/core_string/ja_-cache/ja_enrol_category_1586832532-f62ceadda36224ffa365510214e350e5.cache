@@ -1,0 +1,1 @@
+a:6:{s:15:"category:config";s:51:"カテゴリ登録インスタンスを設定する";s:21:"category:synchronised";s:54:"ロール割り当てをコース登録に同期する";s:21:"enrolcategorysynctask";s:33:"カテゴリ登録同期タスク";s:10:"pluginname";s:18:"カテゴリ登録";s:15:"pluginname_desc";s:207:"カテゴリ登録プラグインはカテゴリコンテクスト内でケイパビリティ「enrol/category:synchronised」が許可されるロールすべてのロール割り当てを同期します。";s:16:"privacy:metadata";s:87:"カテゴリ登録プラグインはいかなる個人データも保存しません。";}

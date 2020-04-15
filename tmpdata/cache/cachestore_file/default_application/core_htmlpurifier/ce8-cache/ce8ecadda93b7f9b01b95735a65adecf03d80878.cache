@@ -1,0 +1,10 @@
+s:1080:"<p>SCORMパッケージは同意された標準に基づきパッケージされた一連のファイルです。SCORM活動モジュールではSCORMおよびAICCパッケージをZIPファイルとしてをアップロードした後、コースに追加することができます。</p>
+
+<p>通常、コンテンツはページ間のナビゲーションと共にそれぞれのページに表示されます。コンテンツを目次およびナビゲーションボタン等と共にポップアップウィンドウ上に表示するための様々なオプションがあります。通常、SCORM活動には問題を含み評点は評定表に記録されます。</p>
+
+<p>SCORM活動は以下のように使用することができます:</p>
+
+<ul><li>マルチメディアコンテンツおよびアニメーションの表示のため</li>
+<li>評価ツールとして</li>
+</ul><div class="helpdoclink"><a href="https://docs.moodle.org/38/ja/mod/scorm/view" class="helplinkpopup"><i class="icon fa fa-info-circle fa-fw iconhelp icon-pre"></i>詳細情報</a></div>
+";

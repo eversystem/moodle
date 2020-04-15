@@ -1,0 +1,7 @@
+a:9:{s:19:"cachedef_foldername";s:30:"フォルダ名キャッシュ";s:8:"clientid";s:20:"クライアントID";s:12:"configplugin";s:48:"Microsoft OneDriveを設定する (レガシー)";s:9:"oauthinfo";s:480:"<p>このプラグインを使用するためにはあなたのサイトを<a href="https://account.live.com/developers/applications">Microsoft</a>に登録する必要があります。</p>
+
+<p>登録処理の一環としてあなたは「リダイレクトドメイン」に次のURLを入力する必要があります:</p>
+
+<p>{$a->callbackurl}</p>
+
+<p>登録完了後、あなたにはここで入力できるクライアントIDおよび秘密鍵が提供されます。</p>";s:10:"pluginname";s:33:"Microsoft OneDrive (レガシー)";s:6:"secret";s:9:"秘密鍵";s:13:"skydrive:view";s:36:"OneDrive (レガシー) 表示する";s:17:"deprecatedwarning";s:254:"警告: このリポジトリプラグインに使用されているAPIはMicrosoftにより廃止されました。そのため、結果として動作しなくなります。新しい「Microsoft OneDrive」リポジトリに移行してください。";s:16:"privacy:metadata";s:208:"Microsoft OneDrive (レガシー) リポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。";}

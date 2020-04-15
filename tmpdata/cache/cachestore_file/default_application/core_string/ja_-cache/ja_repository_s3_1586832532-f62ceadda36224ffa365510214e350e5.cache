@@ -1,0 +1,1 @@
+a:8:{s:10:"access_key";s:18:"アクセスキー";s:12:"configplugin";s:15:"Amazon S3設定";s:8:"endpoint";s:30:"Amazon S3エンドポイント";s:13:"needaccesskey";s:48:"アクセスキーを入力してください。";s:10:"pluginname";s:9:"Amazon S3";s:10:"secret_key";s:9:"秘密鍵";s:7:"s3:view";s:39:"Amazon S3リポジトリを表示する";s:16:"privacy:metadata";s:183:"Amazon S3リポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。";}

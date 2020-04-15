@@ -1,0 +1,1 @@
+a:6:{s:17:"addmoredimensions";s:57:"さらに {$a} 個の空白アスペクトを追加する";s:19:"dimensioncommentfor";s:20:"{$a} のコメント";s:20:"dimensiondescription";s:6:"説明";s:15:"dimensionnumber";s:20:"アスペクト {$a}";s:10:"pluginname";s:12:"コメント";s:16:"privacy:metadata";s:306:"コメント評価プラグインは評価フォームの詳細のみ保存します。フォームがどのように入力されたかという実際の個人データはワークショップモジュール自体に保存されます。データはエクスポートされる提出に添付されます。";}

@@ -1,0 +1,36 @@
+a:45:{s:13:"accountexists";s:309:"このユーザ名のユーザはこのシステムにすでに存在します。これがあなたのアカウントの場合、あなたのユーザ名およびパスワードを使用してログインした後、プリファレンスページからリンクログインとして追加してください。";s:22:"auth_oauth2description";s:28:"OAuth 2標準ベース認証";s:19:"auth_oauth2settings";s:19:"OAuth 2認証設定";s:19:"confirmaccountemail";s:871:"{$a->fullname} さん
+
+あなたのメールアドレスを使用して「 {$a->sitename} 」の新しいアカウントがリクエストされました。
+
+あなたの新しいアカウントを確認するにはこのウェブアドレスにアクセスしてください:
+
+{$a->link}
+
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
+
+分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。
+
+あなたがこれを完了しない場合、他の誰かがあなたのアカウントの情報取得を試みる場合があります。すぐにサイト管理者にご連絡ください。";s:26:"confirmaccountemailsubject";s:27:"{$a}: アカウント確認";s:19:"confirmationinvalid";s:168:"確認リンクが無効または有効期限が切れています。新しい確認メールを生成するため再度ログイン処理を開始してください。";s:19:"confirmationpending";s:57:"このアカウントはメール確認保留中です。";s:23:"confirmlinkedloginemail";s:962:"{$a->fullname} さん
+
+あなたのメールアドレスを使用して「 {$a->sitename} 」のアカウントに {$a->linkedemail} ログインするよう {$a->issuername} へのリンクがリクエストされました。
+
+このリクエストおよびログインへのリンクを確認するにはこのウェブアドレスにアクセスしてください:
+
+{$a->link}
+
+ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
+
+分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。
+
+あなたがこれを完了しない場合、他の誰かがあなたのアカウントの情報取得を試みる場合があります。すぐにサイト管理者にご連絡ください。";s:30:"confirmlinkedloginemailsubject";s:33:"{$a}: リンクログイン確認";s:21:"createaccountswarning";s:257:"このプラグインによりユーザはあなたのサイトでアカウントを作成することができます。このプラグインを使用する場合、よろしければ、「authpreventaccountcreation」設定を有効にしてください。";s:20:"createnewlinkedlogin";s:44:"新しいアカウント ({$a}) のリンク";s:16:"emailconfirmlink";s:39:"あなたのアカウントのリンク";s:20:"emailconfirmlinksent";s:527:"このメールアドレスで既存のアカウントが見つかりましたが、まだリンクされていません。あなたがログインできるようにするにはアカウントをリンクする必要があります。
+
+あなたのメールアドレス <b>{$a}</b> にメールが送信されています。
+
+メールにはあなたのアカウントをリンクするための簡単なインストラクションが含まれます。難しい場合、あなたのサイト管理者にご連絡ください。";s:23:"emailpasswordchangeinfo";s:451:"{$a->firstname} さん
+
+誰か (恐らくあなた) が「 {$a->sitename} 」 のあなたのアカウントの新しいパスワードをリクエストしました。
+
+しかし、あなたは別のサイトのアカウントをログインに使用しているため、あなたのパスワードをリセットできません。
+
+これまでのようにログインページのリンクを使用してログインしてください。
+{$a->admin}";s:30:"emailpasswordchangeinfosubject";s:33:"{$a}: パスワード変更情報";s:4:"info";s:21:"外部アカウント";s:6:"issuer";s:19:"OAuth 2サービス";s:13:"issuernologin";s:57:"この発行者はログインに使用できません。";s:12:"linkedlogins";s:21:"リンクログイン";s:16:"linkedloginshelp";s:42:"リンクログインのヘルプです。";s:25:"loginerror_userincomplete";s:184:"戻されたユーザ情報にはユーザ名およびメールアドレスを含んでいません。OAuth 2サービスが正しく設定されていない可能性があります。";s:21:"loginerror_nouserinfo";s:130:"ユーザ情報が戻されませんでした。OAuth 2サービスが正しく設定されていない可能性があります。";s:24:"loginerror_invaliddomain";s:90:"このサイトでは指定されたメールアドレスは許可されていません。";s:31:"loginerror_authenticationfailed";s:36:"認証処理に失敗しました。";s:31:"loginerror_cannotcreateaccounts";s:87:"あなたのメールアドレスのアカウントは見つかりませんでした。";s:18:"noissuersavailable";s:111:"あなたがログインアカウントにリンクできる設定済みOAuth2サービスはありません。";s:16:"notloggedindebug";s:48:"ログインに失敗しました。理由: {$a}";s:18:"notwhileloggedinas";s:117:"別のユーザでログインされているため、リンクログインを管理することができません。";s:25:"oauth2:managelinkedlogins";s:60:"自分のリンクログインアカウントを管理する";s:10:"notenabled";s:94:"申し訳ございません、OAuth 2認証プラグインが有効にされていません。";s:17:"plugindescription";s:313:"この認証プラグインはログインページに設定済みアイデンティティプロバイダ一覧を表示します。アイデンティティプロバイダを選択することによりユーザはOAuth 2プロバイダのクレデンシャル情報でログインできるようになります。";s:10:"pluginname";s:7:"OAuth 2";s:13:"alreadylinked";s:105:"この外部アカウントはすでにこのサイトのアカウントとリンクされています。";s:28:"privacy:metadata:auth_oauth2";s:13:"OAuth 2認証";s:42:"privacy:metadata:auth_oauth2:authsubsystem";s:72:"このプラグインは認証サブシステムに接続されます。";s:41:"privacy:metadata:auth_oauth2:confirmtoken";s:24:"確認トークです。";s:48:"privacy:metadata:auth_oauth2:confirmtokenexpires";s:69:"確認トークン有効期限切れのタイムスタンプです。";s:34:"privacy:metadata:auth_oauth2:email";s:63:"このアカウントにマップする外部メールです。";s:37:"privacy:metadata:auth_oauth2:issuerid";s:58:"このOAuth 2ログインのOAuth 2発効者のIDです。";s:45:"privacy:metadata:auth_oauth2:tableexplanation";s:85:"ユーザのMoodleアカウントにリンクされるOAuth 2アカウントです。";s:40:"privacy:metadata:auth_oauth2:timecreated";s:103:"ユーザアカウントがOAuth 2ログインにリンクされた時のタイムスタンプです。";s:41:"privacy:metadata:auth_oauth2:timemodified";s:72:"このレコードが修正された時のタイムスタンプです。";s:35:"privacy:metadata:auth_oauth2:userid";s:99:"このOAuth 2ログインがリンクされているユーザアカウントのユーザIDです。";s:41:"privacy:metadata:auth_oauth2:usermodified";s:59:"このアカウントを修正したユーザのIDです。";s:37:"privacy:metadata:auth_oauth2:username";s:66:"このアカウントにマップする外部ユーザ名です。";}

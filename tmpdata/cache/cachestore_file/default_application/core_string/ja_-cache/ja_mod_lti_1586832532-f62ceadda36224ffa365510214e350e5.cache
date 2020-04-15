@@ -1,0 +1,141 @@
+a:361:{s:6:"accept";s:6:"承認";s:8:"accepted";s:6:"承認";s:13:"accept_grades";s:42:"ツールからの評定を受け付ける";s:19:"accept_grades_admin";s:42:"ツールからの評定を受け付ける";s:24:"accept_grades_admin_help";s:383:"このツールのインスタンスに関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
+
+いくつかのツールプロバイダではツール内で実施された操作をベースにMoodleに対して評定報告をサポートすることにより、さらなる統合環境を提供します。";s:18:"accept_grades_help";s:499:"この外部ツールのインスタンスにのみ関わる評定をツールプロバイダが追加、更新、閲覧および削除できるかどうか指定してください。
+
+いくつかのツールプロバイダではツール内で実施された操作をベースにMoodleに対して評定報告をサポートすることにより、さらなる統合環境を提供します。
+
+この設定はツール設定内でオーバーライドできることに留意してください。";s:6:"action";s:6:"操作";s:8:"activate";s:15:"アクティブ";s:24:"activatetoadddescription";s:96:"あなたは説明を追加する前にこのツールを有効化する必要があります。";s:6:"active";s:15:"アクティブ";s:8:"activity";s:6:"活動";s:9:"addnewapp";s:48:"外部アプリケーションを有効にする";s:9:"addserver";s:48:"新しい信頼できるサーバを追加する";s:7:"addtype";s:36:"事前設定ツールを追加する";s:5:"allow";s:6:"許可";s:12:"allowsetting";s:59:"ツールにMoodle内での8Kの設定保存を許可する";s:6:"always";s:6:"常に";s:9:"automatic";s:33:"自動、ツールURLに基づく";s:11:"autoaddtype";s:24:"ツールを追加する";s:7:"baseurl";s:31:"ベースURL/ツール登録名";s:8:"basiclti";s:3:"LTI";s:20:"basiclti_base_string";s:30:"LTI OAuth基本ストリング";s:17:"basiclti_endpoint";s:30:"LTI起動エンドポイント";s:22:"basiclti_in_new_window";s:69:"あなたの活動は新しいウィンドウに表示されます。";s:27:"basiclti_in_new_window_open";s:33:"新しいウィンドウを開く";s:19:"basiclti_parameters";s:24:"LTI起動パラメータ";s:18:"basicltiactivities";s:9:"LTI活動";s:16:"basicltifieldset";s:45:"カスタムテンプレートフィールド";s:13:"basicltiintro";s:12:"活動説明";s:12:"basicltiname";s:9:"活動名";s:16:"basicltisettings";s:73:"基本学習ツール相互運用 (Learning Tool Interoperability) 設定";s:6:"cancel";s:15:"キャンセル";s:9:"cancelled";s:15:"キャンセル";s:13:"cannot_delete";s:60:"あなたはこのツール設定を削除できません。";s:11:"cannot_edit";s:60:"あなたはこのツール設定を編集できません。";s:12:"capabilities";s:21:"ケイパビリティ";s:20:"capabilitiesrequired";s:97:"このツールを有効にするには次のデータにアクセスする必要があります:";s:17:"capabilities_help";s:166:"あなたがツールプロバイダに提供するケイパビリティを選択してください。2つ以上のケイパビリティを選択してください。";s:17:"cleanaccesstokens";s:66:"有効期限切れアクセストークンの外部ツール削除";s:17:"click_to_continue";s:66:"<a href="{$a->link}" target="_top">続けるにはクリック</a>";s:13:"clientidadmin";s:20:"クライアントID";s:18:"clientidadmin_help";s:345:"クライアントIDはツールを識別するため使用されるユニークな値です。LTI 1.3で導入されたJWTセキュリティプロファイルを使用するツールのため自動作成されます。そして、ツールプロバイダ側での接続設定のため渡される詳細の一部である必要があります。";s:7:"comment";s:12:"コメント";s:14:"configpassword";s:54:"デフォルトのリモートツールパスワード";s:18:"configpreferheight";s:24:"デフォルト推奨高";s:18:"configpreferwidget";s:57:"デフォルト起動をウィジェットに設定する";s:17:"configpreferwidth";s:24:"デフォルト推奨幅";s:17:"configresourceurl";s:30:"デフォルトリソースURL";s:13:"configtoolurl";s:39:"デフォルトリモートツールURL";s:11:"configtypes";s:45:"LTIアプリケーションを有効にする";s:10:"configured";s:6:"設定";s:21:"confirmtoolactivation";s:67:"本当にこのツールを有効にしてもよろしいですか?";s:11:"contentitem";s:27:"Content-Itemメッセージ";s:16:"contentitem_help";s:150:"この設定を有効にした場合、外部ツール追加時にオプション「コンテンツを選択する」が利用可能となります。";s:17:"course_tool_types";s:18:"コースツール";s:27:"courseactivitiesorresources";s:36:"コース活動またはリソース";s:8:"courseid";s:23:"コースIDナンバー";s:17:"courseinformation";s:15:"コース情報";s:10:"courselink";s:24:"コースに移動する";s:13:"coursemisconf";s:51:"コースが正しく設定されていません。";s:9:"createdon";s:9:"作成日";s:18:"curllibrarymissing";s:68:"外部ツールにはPHP Curl拡張モジュールが必要です。";s:6:"custom";s:27:"カスタムパラメータ";s:13:"custom_config";s:48:"カスタムツール設定を使用します。";s:11:"custom_help";s:524:"カスタムパラメータはツールプロバイダで使用される設定です。例えばプロバイダから特定のリソースを表示するため、カスタムパラメータを使用することができます。それぞれのパラメータは独立した行に「name=value」のような形で入力する必要があります。例えば次のようになります: 「chapter=3」
+
+ツールプロバイダから指示されない限り、このフィールドは変更しないままで安全です。";s:11:"custominstr";s:27:"カスタムパラメータ";s:11:"debuglaunch";s:27:"デバッグオプション";s:14:"debuglaunchoff";s:12:"通常起動";s:13:"debuglaunchon";s:18:"デバッグ起動";s:7:"default";s:15:"デフォルト";s:24:"default_launch_container";s:33:"デフォルト起動コンテナ";s:29:"default_launch_container_help";s:998:"起動コンテナはコースからツールが起動される場合の表示に影響します。いくつかの起動コンテナではツールに場所を提供して他の起動コンテナではMoodle環境との統合を実現します。
+
+* **デフォルト** - ツール設定で指定された起動コンテナを使用します。
+
+* **埋め込み** - 他の活動タイプと同じようにツールが既存のMoodleウィンドウ内に表示されます。
+
+* **埋め込み (ブロックなし)** - トップページにナビゲーションが付加された形でツールが既存のMoodleウィンドウ内に表示されます。
+
+* **新しいウィンドウ** - ツールは利用可能なスペースすべてを占有して新しいウィンドウに表示されます。ブラウザにより新しいタブまたはポップアップウィンドウが使用されます。ブラウザでは新しいウィンドウのオープンを抑制することができます。";s:8:"delegate";s:21:"教師に委任する";s:6:"delete";s:6:"削除";s:19:"delete_confirmation";s:76:"本当にこの事前設定ツールを削除してもよろしいですか?";s:10:"deletetype";s:36:"事前設定ツールを削除する";s:19:"display_description";s:39:"起動時に活動説明を表示する";s:24:"display_description_help";s:419:"このオプションを有効にした場合、活動説明 (上記) がツールプロバイダのコンテンツの上に表示されます。
+
+説明はツールの起動に関して付加的なインストラクションを提供するために使用できますが必須ではありません。
+
+ツール起動コンテナが新しいウィンドウの場合、説明が表示されることがありません。";s:12:"display_name";s:36:"起動時に活動名を表示する";s:17:"display_name_help";s:450:"このオプションを有効にした場合、活動名 (上記) がツールプロバイダのコンテンツの上に表示されます。
+
+ツールプロバイダはタイトルを表示することもできます。このオプションにより活動タイトルが2回表示されることを防ぐことができます。
+
+ツール起動コンテナが新しいウィンドウの場合、説明が表示されることがありません。";s:15:"domain_mismatch";s:69:"ツールURLのドメインがツール設定と合致しません。";s:5:"donot";s:15:"送信しない";s:11:"donotaccept";s:15:"承認しない";s:10:"donotallow";s:15:"許可しない";s:15:"duplicateregurl";s:54:"この登録URLはすでに使用されています。";s:15:"editdescription";s:87:"このツールに説明を追加するにはここをクリックしてください。";s:8:"edittype";s:36:"事前設定ツールを編集する";s:5:"embed";s:12:"埋め込み";s:15:"embed_no_blocks";s:33:"埋め込み (ブロックなし)";s:23:"enableemailnotification";s:30:"通知メールを送信する";s:28:"enableemailnotification_help";s:129:"この設定を有効にした場合、ツール送信が評定された時点で学生に通知メールが送信されます。";s:17:"enterkeyandsecret";s:87:"あなたのコンシューマ鍵および共有秘密鍵を入力してください。";s:22:"enterkeyandsecret_help";s:111:"あなたにコンシューマ鍵および共有秘密鍵がある場合、ここに入力してください。";s:11:"errorbadurl";s:78:"URLは有効なツールURLまたはカートリッジではありません。";s:25:"errorincorrectconsumerkey";s:54:"コンシューマキーが正しくありません。";s:16:"errorinvaliddata";s:24:"無効なデータ: {$a}";s:21:"errorinvalidmediatype";s:36:"無効なメディアタイプ: {$a}";s:26:"errorinvalidresponseformat";s:63:"無効なContent-Itemレスポンスフォーマットです。";s:14:"errormisconfig";s:141:"ツールが正しく設定されていません。ツール設定を修正するにはあなたのMoodle管理者にご連絡ください。";s:21:"errortooltypenotfound";s:57:"LTIツールタイプが見つかりませんでした。";s:15:"existing_window";s:24:"既存のウィンドウ";s:10:"extensions";s:21:"LTI拡張サービス";s:18:"external_tool_type";s:21:"事前設定ツール";s:23:"external_tool_type_help";s:2309:"* **自動、ツールURLをベースにする** - この設定はほとんどすべてのケースで使用されます。ツールURLに基づきMoodleは最も適切なツール設定を選択します。管理者によるツール設定およびコース内でのツール設定の両者が使用されます。ツールURLが指定された場合、MoodleはツールURLを認識できるか否かフィードバックを提供します。MoodleがツールURLを認識できない場合、あなたは手動でツール設定に入力する必要があります。
+
+* **特定の事前設定ツール** - 特定の事前設定ツールを選択することであなたは外部ツールプロバイダとの通信に関してMoodleにツール設定内容の使用を強制することができます。ツールURLがツールプロバイダに属していない場合、警告が表示されます。一部のケースでは特定ツールの提供時にツールURLを入力する必要はありません (ツールプロバイダ内で特定のリソースを起動しな場合)。
+
+* **カスタム設定** - このインスタンス内でカスタムツール設定を割り当てる場合、拡張要素を表示した後、コンシューマ鍵および共通秘密鍵を入力してください。コンシューマ鍵および共通秘密鍵がない場合、あなたはツールプロバイダにリクエストすることができます。すべてのツールがコンシューマ鍵および共通秘密鍵を必要とすることではないため、その場合はフィールドを空白のままにすることができます。
+
+### 事前設定ツール編集
+
+外部事前設定ツールのドロップダウンメニューでは3つのアイコンを選択することができます:
+
+* **追加** - コースレベルの設定を作成します。コース内すべての外部ツールインスタンスではツール設定を使用することができます。
+
+* **編集** - コースレベルの事前設定ツールをドロップダウンメニューから選択してアイコンをクリックしてください。ツール設定詳細を編集することができます。
+
+* **削除** - 選択したコースレベルの事前設定ツールを削除します。";s:19:"external_tool_types";s:21:"事前設定ツール";s:15:"failedtoconnect";s:67:"Moodleが「 $a 」システムと通信できませんでした。";s:22:"failedtocreatetooltype";s:99:"新しいツールの作成に失敗しました。URLを確認して再度お試しください。";s:23:"failedtodeletetoolproxy";s:168:"ツール登録の削除に失敗しました。あなたは「外部ツール登録を管理する」にアクセスして手動で削除する必要があります。";s:26:"filter_basiclti_configlink";s:72:"あなたの推奨サイトおよびパスワードを設定します。";s:24:"filter_basiclti_password";s:33:"パスワードは必須です。";s:12:"filterconfig";s:9:"LTI管理";s:10:"filtername";s:3:"LTI";s:15:"fixexistingconf";s:75:"設定の正しくないインスタンスに既存の設定を使用する";s:6:"fixnew";s:15:"新しい設定";s:10:"fixnewconf";s:75:"正しくない設定のインスタンスに新しい設定を定義する";s:6:"fixold";s:30:"既存の設定を使用する";s:11:"forced_help";s:198:"この設定はコースまたはサイトレベルのツール設定で強制されています。あなたはこのインターフェースで設定内容を変更することはできません。";s:9:"force_ssl";s:18:"SSLを強制する";s:14:"force_ssl_help";s:427:"このオプションを有効にすることによりツールプロバイダのツール起動すべてにSSLの使用が強制されます。
+
+加えてツールプロバイダからのウェブサービスリクエストすべてにSSLが使用されます。
+
+このオプションを使用する場合、MoodleサイトおよびツールプロバイダがSSLをサポートしていることを確認してください。";s:11:"generaltool";s:15:"一般ツール";s:17:"global_tool_types";s:36:"グローバル事前設定ツール";s:7:"grading";s:24:"評定ルーティング";s:8:"icon_url";s:15:"アイコンURL";s:13:"icon_url_help";s:270:"アイコンURLではこの活動がコース一覧に表示される時に表示されるアイコンを変更します。デフォルトのLTIアイコンを使用する代わりに活動のタイプで使用されるアイコンを指定することができます。";s:2:"id";s:2:"ID";s:24:"indicator:cognitivedepth";s:12:"LTI認知的";s:29:"indicator:cognitivedepth_help";s:81:"この指標はLTI活動で学生が到達した認識深度に基づきます。";s:27:"indicator:cognitivedepthdef";s:12:"LTI認知的";s:32:"indicator:cognitivedepthdef_help";s:210:"この分析間隔中、参加者がLTI活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧)。";s:32:"indicator:cognitivedepthdef_link";s:45:"Learning_analytics_indicators#Cognitive_depth";s:23:"indicator:socialbreadth";s:12:"LTI社会的";s:28:"indicator:socialbreadth_help";s:87:"この指標はLTI活動で学生が到達した社会的広がりに基づきます。";s:26:"indicator:socialbreadthdef";s:12:"LTI社会的";s:31:"indicator:socialbreadthdef_help";s:199:"この分析間隔中、参加者がLTI活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。";s:31:"indicator:socialbreadthdef_link";s:44:"Learning_analytics_indicators#Social_breadth";s:13:"initiatelogin";s:30:"ログインURLを開始する";s:18:"initiatelogin_help";s:174:"ログインの開始をリクエストするためのツールURLが送信されます。メッセージをツールに正常に送信するにはこのURLが必要です。";s:9:"invalidid";s:36:"LTI IDが正しくありません。";s:11:"jwtsecurity";s:7:"LTI 1.3";s:16:"launch_in_moodle";s:36:"Moodle内でツールを起動する";s:15:"launch_in_popup";s:45:"ツールをポップアップに起動する";s:10:"launch_url";s:12:"ツールURL";s:15:"launch_url_help";s:694:"ツールURLでは外部ツールのウェブアドレスを指定します。また、表示するリソース等の追加的な情報を含むことができます。ツールURLに何を入力するのか分からない場合、ツールプロバイダを確認してください。
+
+あなたはカートリッジURLを入力することもできます。フォーム詳細の残りは自動的に入力されます。
+
+事前設定ツールを選択した場合、あなたはツールURLを入力する必要はありません。ツールリンクがツールプロバイダのシステムを起動して特定のリソースに移動しない場合がこのケースにあたります。";s:13:"launchinpopup";s:18:"起動コンテナ";s:18:"launchinpopup_help";s:1001:"起動コンテナはコースからツールが起動される場合の表示に影響します。いくつかの起動コンテナではツールに場所を提供して他の起動コンテナではMoodle環境との統合を実現します。
+
+* **デフォルト** - ツール設定で指定された起動コンテナを使用します。
+
+* **埋め込み** - 他の活動タイプと同じようにツールが既存のMoodleウィンドウ内に表示されます。
+
+* **埋め込み (ブロックなし)** - トップページにナビゲーションが付加された形でツールが既存のMoodleウィンドウ内に表示されます。
+
+* **新しいウィンドウ** - ツールは利用可能なスペースすべてを占有して新しいウィンドウに表示されます。ブラウザにより、新しいタブまたはポップアップウィンドウが使用されます。ブラウザでは新しいウィンドウのオープンを抑制することができます。";s:13:"launchoptions";s:21:"起動オプション";s:10:"leaveblank";s:54:"必要でない場合、空白にしてください。";s:3:"lti";s:3:"LTI";s:15:"lti:addinstance";s:45:"新しい外部ツール活動を追加する";s:17:"lti:addcoursetool";s:45:"コース個別ツール設定を追加する";s:9:"lti:grade";s:54:"外部ツールから戻された評点を表示する";s:10:"lti:manage";s:51:"ツール起動時、インストラクタになる";s:9:"lti:admin";s:39:"ツール起動時に管理者になる";s:18:"lti:requesttooladd";s:72:"ツールがサイト全体に設定されるようリクエストする";s:8:"lti:view";s:36:"外部ツール活動を起動する";s:11:"ltisettings";s:9:"LTI設定";s:18:"lti_administration";s:36:"事前設定ツールを編集する";s:12:"lti_errormsg";s:83:"ツールにより次のエラーメッセージが返されました: 「 {$a} 」";s:16:"lti_launch_error";s:58:"外部ツール起動中にエラーが発生しました:";s:29:"lti_launch_error_tool_request";s:168:"<p>管理者にツール設定の完了をリクエストするには<a href="{$a->admin_request_url}" target="_top">ここをクリック</a>してください。 </p>";s:30:"lti_launch_error_unsigned_help";s:564:"<p>ツールプロバイダのコンシューマ鍵および共通秘密鍵が不足しているため、このエラーが発生したと考えられます。</p>
+<p>コンシューマ鍵および共通秘密鍵がある場合、あなたは外部ツールインスタンスの設定時に入力することができます (拡張要素が表示されていることを確認してください)。</p>
+<p> 代わりにあなたは<a href="{$a->course_tool_editor}">コースレベルのツールプロバイダ設定を作成</a>することができます。</p>";s:22:"lti_tool_request_added";s:165:"ツール設定のリクエストが正常に送信されました。あなたはツール設定を完了するため管理者に連絡する必要があります。";s:25:"lti_tool_request_existing";s:87:"ツールドメインに関するツール設定はすでに送信されています。";s:24:"ltiunknownserviceapicall";s:60:"LTIの不明なサービスAPIがコールされました。";s:10:"ltiversion";s:18:"LTIバージョン";s:15:"ltiversion_help";s:249:"メッセージおよびサービスリクエストに証明するため使用されるLTIのバージョンです: LTI 1.0/1.1およびLTI 2.0はOAuth 1.0Aセキュリティプロファイルを使用します。LTI 1.3.0はJWTを使用します。";s:10:"main_admin";s:15:"概要ヘルプ";s:15:"main_admin_help";s:1628:"外部ツールはMoodleユーザと遠隔に設置された学習リソースとの情報のやりとりを実現します。特別な起動プロトコルを通してリモートツールは起動ユーザの一般的な情報にアクセスできます。例えばインスティテューション名、コースID、ユーザIDおよびユーザ名またはメールアドレス等の情報です。
+
+このページに一覧表示されているツールは3つのカテゴリに分けられます:
+
+* **アクティブ** - これらのツールプロバイダは管理者により承認および設定されています。このサイト内すべてのコースで利用できます。コンシューマ鍵および共通秘密鍵が入力された場合、このサイトおよびリモートツール間において安全な通信チャネルを提供する信頼関係が確立されます。
+
+* **保留** - これらのツールプロバイダはパッケージインポート経由で登録されていますが、管理者から設定されていない状態です。コンシューマ鍵および共通秘密鍵がある場合、またはそれらを必要としない場合、教師はこれらのプロバイダのツールを利用できます。
+
+* **拒否** - これらのツールプロバイダは管理者がサイトにおいて利用できるようにする意図がない旨、フラグが立てられた状態です。コンシューマ鍵および共通秘密鍵がある場合、またはそれらを必要としない場合、教師はこれらのプロバイダのツールを利用できます。";s:21:"manage_external_tools";s:24:"ツールを管理する";s:12:"manage_tools";s:36:"事前設定ツールを管理する";s:19:"manage_tool_proxies";s:36:"外部ツール登録を管理する";s:15:"manuallyaddtype";s:97:"あなたは代わりに<a href="{$a}">ツールを手動設定</a>することができます。";s:13:"miscellaneous";s:9:"その他";s:18:"misconfiguredtools";s:78:"設定の正しくないツールインスタンスが検出されました。";s:22:"missingparameterserror";s:57:"ページの設定が正しくありません: 「 $a 」";s:17:"module_class_type";s:30:"Moodleモジュールタイプ";s:10:"modulename";s:15:"外部ツール";s:15:"modulename_help";s:1270:"外部ツール活動モジュールにおいて学生は他のウェブサイト上の学習リソースおよび活動と相互連携することができます。例えば外部ツールは新しい活動タイプまたは出版社の学習教材へのアクセスを提供することができます。
+
+外部ツール活動を作成するにはツールプロバイダによるLTI (Learning Tool Interoperability 学習ツール相互運用) のサポートが必要です。教師は外部ツール活動を作成またはサイト管理者によって設定されたツールを利用可能な状態にすることができます。
+
+いくつかの点において外部ツール活動はURLリソースと異なります:
+
+* 外部ツールはコンテクスト志向 (context aware) です。例えばインスティテューション、コースおよび氏名等、ツールを起動したユーザの情報にアクセスすることができます。
+* 外部ツールは活動インスタンスに関する評点の閲覧、更新および削除をサポートします。
+* 外部ツール設定では両者間の安全な通信を許可することにより、あなたのサイトおよびツールプロバイダ間の信頼関係を確立します。";s:15:"modulename_link";s:12:"mod/lti/view";s:24:"modulename_shortcut_link";s:19:"mod/lti/view/custom";s:16:"modulenameplural";s:15:"外部ツール";s:25:"modulenamepluralformatted";s:21:"LTIインスタンス";s:4:"name";s:6:"名称";s:5:"never";s:6:"なし";s:10:"new_window";s:24:"新しいウィンドウ";s:17:"no_lti_configured";s:54:"アクティブな外部ツールはありません。";s:14:"no_lti_pending";s:51:"保留された外部ツールはありません。";s:15:"no_lti_rejected";s:51:"拒否された外部ツールはありません。";s:12:"no_lti_tools";s:57:"設定されている外部ツールはありません。";s:14:"no_tp_accepted";s:57:"承認された外部ツール登録はありません。";s:15:"no_tp_cancelled";s:66:"キャンセルされた外部ツール登録はありません。";s:16:"no_tp_configured";s:69:"登録解除された外部ツール登録設定はありません。";s:13:"no_tp_pending";s:54:"保留中の外部ツール登録はありません。";s:14:"no_tp_rejected";s:57:"拒否された外部ツール登録はありません。";s:10:"noattempts";s:81:"このツールインスタンスでは受験されたものはありません。";s:6:"noltis";s:54:"外部ツールインスタンスはありません。";s:16:"noprofileservice";s:66:"プロファイルサービスが見つかりませんでした。";s:9:"noservers";s:45:"サーバが見つかりませんでした。";s:7:"notypes";s:162:"現在、Moodle内で設定されているLTIツールはありません。追加するには上のインストールリンクをクリックしてください。";s:11:"noviewusers";s:120:"このツールを使用するパーミッションが割り当てられたユーザは見つかりませんでした。";s:13:"oauthsecurity";s:11:"LTI 1.0/1.1";s:16:"optionalsettings";s:21:"オプション設定";s:12:"organization";s:12:"組織詳細";s:17:"organizationdescr";s:12:"組織説明";s:14:"organizationid";s:8:"組織ID";s:19:"organizationid_help";s:244:"このMoodleインスタンスの固有IDです。一般的に組織で使用されているDNS名です。
+
+このフィールドを空白にした場合、このMoodleサイトのホスト名がデフォルト値として使用されます。";s:15:"organizationurl";s:9:"組織URL";s:20:"organizationurl_help";s:176:"このMoodleインスタンスのベースURLです。
+
+このフィールドを空白にした場合、サイト設定を基にしてデフォルト値が使用されます。";s:8:"pagesize";s:37:"1ページあたりの表示送信数";s:9:"parameter";s:24:"ツールパラメータ";s:14:"parameter_help";s:147:"ツールパラメータは認められたツールプロキシ内でツールプロバイダにより渡すために要求される設定です。";s:8:"password";s:15:"共有秘密鍵";s:14:"password_admin";s:15:"共有秘密鍵";s:19:"password_admin_help";s:401:"共有秘密鍵はツールへの認証アクセスに使用されるパスワードだと考えることができます。ツールプロバイダからコンシューマ鍵と共に提供される必要があります。
+
+Moodleからの安全な通信を必要とせず評定レポートのような追加的なサービスを提供しない場合、共通秘密鍵は必要ではありません。";s:13:"password_help";s:865:"設定処理の一環として提供されるため事前に設定されたツールではここで共通秘密鍵を入力する必要はありません。
+
+未設定のツールプロバイダへのリンクを作成する場合、このフィールドには設定値を入力する必要があります。このコース内でツールプロバイダが1回以上使用される場合、コースツール設定を追加することは良い考え方です。
+
+共有秘密鍵はツールへの認証アクセスに使用されるパスワードだと考えることができます。ツールプロバイダからコンシューマ鍵と共に提供される必要があります。
+
+Moodleからの安全な通信を必要とせず評定レポートのような追加的なサービスを提供しない場合、共通秘密鍵は必要ではありません。";s:7:"pending";s:6:"保留";s:20:"pluginadministration";s:21:"外部ツール管理";s:10:"pluginname";s:15:"外部ツール";s:12:"preferheight";s:9:"推奨高";s:12:"preferwidget";s:42:"ウィジェットの起動を選択する";s:11:"preferwidth";s:9:"推奨幅";s:15:"press_to_submit";s:27:"この活動を起動する";s:7:"privacy";s:18:"プライバシー";s:25:"privacy:metadata:courseid";s:80:"ユーザがLTIコンシューマからアクセスするコースのIDです。";s:31:"privacy:metadata:courseidnumber";s:92:"ユーザがLTIコンシューマからアクセスするコースのIDナンバーです。";s:31:"privacy:metadata:coursefullname";s:93:"ユーザがLTIコンシューマからアクセスするコースのフルネームです。";s:32:"privacy:metadata:courseshortname";s:87:"ユーザがLTIコンシューマからアクセスするコースの省略名です。";s:26:"privacy:metadata:createdby";s:45:"レコードを作成したユーザです。";s:22:"privacy:metadata:email";s:84:"LTIコンシューマにアクセスするユーザのメールアドレスです。";s:32:"privacy:metadata:externalpurpose";s:117:"LTIコンシューマはユーザ情報およびコンテクストをLTIツールプロバイダに提供します。";s:26:"privacy:metadata:firstname";s:66:"LTIコンシューマにアクセスするユーザの名です。";s:25:"privacy:metadata:fullname";s:78:"LTIコンシューマにアクセスするユーザのフルネームです。";s:25:"privacy:metadata:lastname";s:66:"LTIコンシューマにアクセスするユーザの姓です。";s:31:"privacy:metadata:lti_submission";s:18:"LTI提出です。";s:45:"privacy:metadata:lti_submission:datesubmitted";s:63:"タイムスタンプは提出された日時を示します。";s:43:"privacy:metadata:lti_submission:dateupdated";s:72:"タイムスタンプは提出が修正された日時を示します。";s:44:"privacy:metadata:lti_submission:gradepercent";s:52:"ユーザの評点 (パーセンテージ) です。";s:45:"privacy:metadata:lti_submission:originalgrade";s:42:"ユーザのオリジナル評点です。";s:38:"privacy:metadata:lti_submission:userid";s:47:"LTI活動を送信したユーザのIDです。";s:33:"privacy:metadata:lti_tool_proxies";s:24:"LTIプロクシです。";s:38:"privacy:metadata:lti_tool_proxies:name";s:27:"LTIプロクシ名です。";s:26:"privacy:metadata:lti_types";s:21:"LTIタイプです。";s:31:"privacy:metadata:lti_types:name";s:24:"LTIタイプ名です。";s:21:"privacy:metadata:role";s:87:"LTIコンシューマにアクセスするユーザのコースでのロールです。";s:28:"privacy:metadata:timecreated";s:45:"レコードが作成された日時です。";s:29:"privacy:metadata:timemodified";s:45:"レコードが修正された日時です。";s:23:"privacy:metadata:userid";s:65:"LTIコンシューマにアクセスするユーザのIDです。";s:29:"privacy:metadata:useridnumber";s:77:"LTIコンシューマにアクセスするユーザのIDナンバーです。";s:25:"privacy:metadata:username";s:75:"LTIコンシューマにアクセスするユーザのユーザ名です。";s:9:"publickey";s:9:"公開鍵";s:14:"publickey_help";s:175:"受信メッセージおよびサービスリクエストの承認に関して署名するためツールによって提供される公開鍵 (PEMフォーマット) です。";s:10:"quickgrade";s:36:"クイック評定を有効にする";s:15:"quickgrade_help";s:328:"この設定を有効にした場合、1ページで複数のツールを評定することができます。ページ内のすべての変更を同時に保存するには評点とコメントを変更して画面下部にある「すべてのフィードバックを保存する」ボタンをクリックしてください。";s:8:"redirect";s:144:"あなたは数秒以内にリダイレクトされます。リダイレクトされない場合、ボタンをクリックしてください。";s:15:"redirectionuris";s:21:"リダイレクトURI";s:20:"redirectionuris_help";s:208:"ツールが認証リクエストに使用するためのURI一覧です (1行あたり1件 )。メッセージをツールに正常に送信するには少なくとも1件登録する必要があります。";s:8:"register";s:6:"登録";s:16:"register_warning";s:366:"登録ページを開くのにしばらく時間がかかります。表示されない場合、あなたが設定で正しいURLを入力したか確認してください。Moodleがhttpsを使用している場合、あなたがhttpsをサポートするよう設定していること、そしてURLにhttpsを使用していることを確認してください。";s:12:"registertype";s:45:"新しい外部ツール登録を設定する";s:20:"registration_options";s:21:"登録オプション";s:16:"registrationname";s:27:"ツールプロバイダ名";s:21:"registrationname_help";s:72:"登録されるツールプロバイダ名を入力してください。";s:15:"registrationurl";s:9:"登録URL";s:20:"registrationurl_help";s:144:"登録リクエストが送信されるロケーションとして登録URLはツールプロバイダから利用することができます。";s:6:"reject";s:6:"拒否";s:8:"rejected";s:6:"拒否";s:8:"resource";s:12:"リソース";s:11:"resourcekey";s:21:"コンシューマ鍵";s:17:"resourcekey_admin";s:21:"コンシューマ鍵";s:22:"resourcekey_admin_help";s:754:"コンシューマ鍵はツールへの認証アクセスに使用されるユーザ名だと考えることができます。ユーザによるMoodleサイトからのツール起動を一意的に識別するためツールプロバイダが使用することができます。
+
+コンシューマ鍵はツールプロバイダから提供される必要があります。コンシューマ鍵の取得方法はツールプロバイダ間で異なります。自動処理である場合も、またツールプロバイダに連絡が必要な場合もあります。
+
+Moodleからの安全な通信を必要とせず評定レポートのような追加的なサービスを提供しない場合、コンシューマ鍵は必要ではありません。";s:16:"resourcekey_help";s:1227:"設定処理の一環として提供されるため事前に設定されたツールではここでコンシューマ鍵を入力する必要はありません。
+
+未設定のツールプロバイダへのリンクを作成する場合、このフィールドには設定値を入力する必要があります。このコース内でツールプロバイダが1回以上使用される場合、コースツール設定を追加することは良い考え方です。
+
+コンシューマ鍵はツールへの認証アクセスに使用されるユーザ名だと考えることができます。ユーザによるMoodleサイトからのツール起動を一意的に識別するためツールプロバイダが使用することができます。
+
+コンシューマ鍵はツールプロバイダから提供される必要があります。ココンシューマ鍵の取得方法はツールプロバイダ間で異なります。自動処理である場合も、またツールプロバイダに連絡が必要な場合もあります。
+
+Moodleからの安全な通信を必要とせず評定レポートのような追加的なサービスを提供しない場合、コンシューマ鍵は必要ではありません。";s:11:"resourceurl";s:15:"リソースURL";s:16:"return_to_course";s:105:"コースに戻るには<a href="{$a->link}" target="_top">ここ</a>をクリックしてください。";s:15:"saveallfeedback";s:51:"私のフィードバックすべてを保存する";s:15:"search:activity";s:30:"外部ツール - 活動情報";s:15:"secure_icon_url";s:27:"セキュアアイコンURL";s:20:"secure_icon_url_help";s:240:"アイコンURLに似ていますがSSLを通してサイトが安全にアクセスされる際に使用されます。このフィールドは安全ではないイメージの表示に関するブラウザの警告表示を防ぎます。";s:17:"secure_launch_url";s:24:"セキュアツールURL";s:22:"secure_launch_url_help";s:532:"ツールURLに似ていますがツールURLの代わりに高度なセキュリティが要求されます。MoodleサイトがSSL経由でアクセスされた場合、またはツール設定で常にSSLから起動するよう指定されている場合、ツールURLの代わりにセキュアツールURLが使用されます。
+
+SSL経由での起動を強制するためツールURLにhttpsアドレスを設定することもできます。また、このフィールドは空白のままにすることもできます。";s:13:"selectcontent";s:30:"コンテンツを選択する";s:4:"send";s:6:"送信";s:8:"services";s:12:"サービス";s:13:"services_help";s:160:"あなたがツールプロバイダに提供したいサービスを選択してください。2つ以上のサービスを選択することができます。";s:12:"setupoptions";s:33:"セットアップオプション";s:11:"share_email";s:51:"ランチャのメールをツールと共有する";s:17:"share_email_admin";s:51:"ランチャのメールをツールと共有する";s:22:"share_email_admin_help";s:371:"ツールを起動したユーザのメールアドレスをツールプロバイダと共有するかどうか指定してください。ツールプロバイダはユーザがUI内のユーザと同一であることを確認するため、またはツール内の操作に基づいてメール送信するため起動者のメールアドレスを必要とします。";s:16:"share_email_help";s:480:"ツールを起動したユーザのメールアドレスをツールプロバイダと共有するかどうか指定してください。
+
+ツールプロバイダはユーザがUI内のユーザと同一であることを確認するため、またはツール内の操作に基づいてメール送信するため、起動者のメールアドレスを必要とします。
+
+この設定はツール設定内でオーバーライドできることに留意してください。";s:10:"share_name";s:42:"ランチャ名をツールと共有する";s:16:"share_name_admin";s:42:"ランチャ名をツールと共有する";s:21:"share_name_admin_help";s:252:"ツールを起動したユーザのフルネームをツールプロバイダと共有するかどうか指定してください。ツール内に有益な情報を表示するためツールプロバイダは起動者の名前を必要とします。";s:15:"share_name_help";s:358:"ツールを起動したユーザのフルネームをツールプロバイダと共有するかどうか指定してください。
+
+ツール内に有益な情報を表示するためツールプロバイダは起動者の名前を必要とします。
+
+この設定はツール設定内でオーバーライドできることに留意してください。";s:12:"share_roster";s:81:"このコースの参加者リストへのツールのアクセスを許可する";s:18:"share_roster_admin";s:51:"ツールがコース一覧にアクセスできる";s:23:"share_roster_admin_help";s:159:"このツールが起動された場合、コース内の登録済みユーザ一覧にツールがアクセスできるかどうか指定してください。";s:17:"share_roster_help";s:221:"コース内の登録済みユーザ一覧にツールがアクセスできるかどうか指定してください。
+
+この設定はツール設定内でオーバーライドできることに留意してください。";s:31:"show_in_course_activity_chooser";s:63:"活動チューザまたは事前設定ツールに表示する";s:19:"show_in_course_lti1";s:21:"ツール設定使用";s:24:"show_in_course_lti1_help";s:435:"コースへの追加時の選択のため、このツールを教師に活動チューザ内で表示することができます。コースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内にも表示することができます。さらなるツール設定のオプションはコースへの外部ツール追加時に正確なツールURLが入力された場合のみ使用されます。";s:19:"show_in_course_lti2";s:21:"ツール設定使用";s:24:"show_in_course_lti2_help";s:279:"コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内に表示することができます。";s:17:"show_in_course_no";s:84:"表示しない、合致するツールURLが入力された場合のみ使用する";s:28:"show_in_course_preconfigured";s:69:"外部ツール追加時に事前設定ツールとして表示する";s:4:"size";s:24:"サイズパラメータ";s:20:"opensslconfiginvalid";s:253:"あなたのウェブサーバでLTI 1.3を設定および有効化するには有効なopenssl.cnfが必要です。あなたのサイト管理者に連絡してこのサイトのopensslを設定および有効化するよう依頼してください。";s:10:"submission";s:6:"送信";s:11:"submissions";s:6:"提出";s:14:"submissionsfor";s:14:"{$a} の提出";s:27:"successfullycreatedtooltype";s:52:"正常に新しいツールが作成されました!";s:47:"successfullyfetchedtoolconfigurationfromcontent";s:84:"選択されたコンテンツから正常にツール設定を取得しました。";s:25:"subplugintype_ltiresource";s:27:"LTIサービスリソース";s:32:"subplugintype_ltiresource_plural";s:27:"LTIサービスリソース";s:24:"subplugintype_ltiservice";s:15:"LTIサービス";s:31:"subplugintype_ltiservice_plural";s:15:"LTIサービス";s:23:"subplugintype_ltisource";s:12:"LTIソース";s:30:"subplugintype_ltisource_plural";s:12:"LTIソース";s:17:"toggle_debug_data";s:39:"デバッグデータに切り替える";s:21:"tool_config_not_found";s:63:"このURLのツール設定が見つかりませんでした。";s:13:"tool_settings";s:15:"ツール設定";s:15:"tooldescription";s:15:"ツール説明";s:20:"tooldescription_help";s:215:"活動リスト内で教師に表示されるツールの説明です。
+
+ここには何のためのツールであるか、何をするのかおよび教師が知る必要のある追加情報を記述します。";s:25:"tooldetailsaccesstokenurl";s:27:"アクセストークンURL";s:25:"tooldetailsauthrequesturl";s:24:"認証リクエストURL";s:19:"tooldetailsclientid";s:20:"クライアントID";s:23:"tooldetailsdeploymentid";s:8:"設置ID";s:24:"tooldetailsmailtosubject";s:18:"LTIツール設定";s:21:"tooldetailsmodalemail";s:9:"メール";s:20:"tooldetailsmodallink";s:27:"設定詳細を表示する";s:21:"tooldetailsmodaltitle";s:21:"ツール設定詳細";s:21:"tooldetailsplatformid";s:26:"プラットフォームID";s:26:"tooldetailspublickeyseturl";s:21:"公開鍵セットURL";s:15:"toolisbeingused";s:51:"このツールは {$a} 回使用されました。";s:18:"toolisnotbeingused";s:54:"このツールはまだ使用されていません。";s:9:"toolproxy";s:21:"外部ツール登録";s:14:"toolproxy_help";s:1325:"外部ツール登録はMoodleサイト管理者がLTI 2.0をサポートしているツールプロバイダから取得したツールプロキシから外部ツールを設定できるようにします。ツールプロバイダから提供されたURLすべてにおいて処理を開始できる必要があります。ツールプロバイダに提供するケイパビリティおよびサービスは新しい登録の設定時に選択されます。
+
+このページに一覧表示されているツール登録は4つのカテゴリに分けられます:
+
+* **設定** - これらのツール登録はセットアップされていますが登録処理は開始していません。
+* **保留** - これらのツール登録の登録処理は開始していますが完了していません。 「設定」カテゴリに戻すには設定を開いて保存してください。
+* **承認** - これらのツール登録は承認されています。ツールプロキシで指定されたリソースは初期ステータス「保留」の状態で事前設定ツールページに表示されます。
+* **拒否** - これらのツール登録は登録処理中に拒否されています。登録処理を再開するため「設定」カテゴリに戻すには設定を開いて保存してください。";s:21:"toolproxyregistration";s:21:"外部ツール登録";s:16:"toolregistration";s:21:"外部ツール登録";s:9:"toolsetup";s:21:"外部ツール設定";s:9:"tooltypes";s:9:"ツール";s:13:"tooltypeadded";s:48:"事前設定ツールが追加されました。";s:15:"tooltypedeleted";s:48:"事前設定ツールが削除されました。";s:18:"tooltypenotdeleted";s:57:"事前設定ツールを削除できませんでした。";s:15:"tooltypeupdated";s:48:"事前設定ツールが更新されました。";s:7:"toolurl";s:12:"ツールURL";s:18:"toolurlplaceholder";s:16:"ツールURL ...";s:12:"toolurl_help";s:986:"ツールベースURLは正しいツール設定をツールツールURLと合致させるために使用されます。URLの接頭辞「http(s)」は任意です。
+
+加えて、外部ツールインスタンスのツールURLが指定されていない場合、ベースURLが使用されます。
+
+例えばベースURL *tool.com* は以下と合致します:
+
+* tool.com
+* tool.com/quizzes
+* tool.com/quizzes/quiz.php?id=10
+* www.tool.com/quizzes
+
+ベースURL  *www.tool.com/quizzes* は以下と合致します:
+
+* www.tool.com/quizzes
+* tool.com/quizzes
+* tool.com/quizzes/take.php?id=10
+
+ベースURL  *quiz.tool.com* は以下と合致します:
+* quiz.tool.com
+* quiz.tool.com/take.php?id=10
+
+2つの異なるツール設定が同じドメインに対して割り当てられている場合、最も適切に合致した設定が使用されます。
+
+あなたはカートリッジURLを入力することもできます。ツール詳細は自動的に入力されます。";s:35:"toolurl_contentitemselectionrequest";s:24:"コンテンツ選択URL";s:40:"toolurl_contentitemselectionrequest_help";s:192:"コンテンツ選択URLはツールプロバイダのコンテンツ選択ページを起動するため使用されます。空白にした場合、ツールＵＲＬが使用されます。";s:8:"typename";s:12:"ツール名";s:13:"typename_help";s:210:"ツール名はMoodle内のツールプロバイダを識別するために使用されます。ここで入力された名称はコース内で外部ツールを追加する時に教師に表示されます。";s:5:"types";s:9:"タイプ";s:22:"unabletocreatetooltype";s:36:"ツールを作成できません。";s:20:"unabletofindtooltype";s:48:"{$a->id} のツールが見つかりません。";s:12:"unknownstate";s:24:"不明なステータス";s:6:"update";s:6:"更新";s:22:"useraccountinformation";s:30:"ユーザアカウント情報";s:23:"userpersonalinformation";s:21:"ユーザ個人情報";s:20:"using_tool_cartridge";s:42:"ツールカートリッジを使用する";s:24:"using_tool_configuration";s:31:"ツール設定を使用する:";s:8:"validurl";s:61:"有効なURLは「http(s)://」で開始してください。";s:15:"viewsubmissions";s:42:"提出および評定画面を表示する";}

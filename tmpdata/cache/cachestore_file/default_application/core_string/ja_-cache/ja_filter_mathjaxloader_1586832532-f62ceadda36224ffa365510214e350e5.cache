@@ -1,0 +1,9 @@
+a:12:{s:10:"filtername";s:7:"MathJax";s:20:"additionaldelimiters";s:24:"追加数式デリミタ";s:25:"additionaldelimiters_help";s:356:"MathJaxフィルタはデリミタ文字内に含まれる数式を構文解析します。
+
+認められるデリミタ文字をここに追加することができます (例 AsciiMathは「`」を使用します)。デリミタには複数文字を含むことができます。また、複数デリミタをカンマで区切ることもできます。";s:8:"httpsurl";s:11:"MathJax URL";s:13:"httpsurl_help";s:43:"MathJaxライブラリのフルURLです。";s:22:"texfiltercompatibility";s:24:"TeXフィルタ互換性";s:27:"texfiltercompatibility_help";s:298:"TeX表記法フィルタの代わりにMathJaxフィルタを使用することができます。
+
+TeX表記法フィルタで使用されるデリミタすべてをサポートするため、MathJaxはすべての数式をテキストに「インライン」表示するよう設定されます。";s:12:"localinstall";s:46:"ローカルMathJaxインストレーション";s:17:"localinstall_help";s:687:"デフォルトのMathJax設定ではCDNバージョンのMathJaxを使用しますが、必要であればローカルにMathJaxをインストールすることもできます。
+
+これは帯域幅の節約またはローカルプロキシの制限に対して有用です。
+
+MathJaxのローカルインストレーションを使用するには最初に「https://www.mathjax.org/」から完全なMathJaxライブラリをダウンロードしてください。それからウェブサーバにインストールしてください。最後にローカルのMathJax.js URLを指すため、MathJaxフィルタ設定「httpurl」および「httpsurl」を更新してください。";s:15:"mathjaxsettings";s:13:"MathJax設定";s:20:"mathjaxsettings_desc";s:219:"ほとんどのユーザに対してMathJaxデフォルト設定は適切ですが、MathJaxは高度に設定可能であり標準MathJax設定オプションをここでどれでも追加することができます。";s:16:"privacy:metadata";s:76:"MathJaxプラグインはいかなる個人データも保存しません。";}

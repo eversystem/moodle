@@ -1,0 +1,1 @@
+a:8:{s:18:"backupofcourselogs";s:32:"{$a} のバックアップログ";s:22:"logsofbackupexecutedon";s:50:"{$a} に実行されたバックアップのログ";s:14:"nobackupsfound";s:54:"バックアップは見つかりませんでした。";s:11:"nologsfound";s:69:"このバックアップにログは見つかりませんでした。";s:10:"pluginname";s:30:"バックアップレポート";s:12:"strftimetime";s:8:"%H:%M:%S";s:8:"viewlogs";s:21:"ログを表示する";s:16:"privacy:metadata";s:99:"バックアップレポートプラグインはいかなる個人データも保存しません。";}

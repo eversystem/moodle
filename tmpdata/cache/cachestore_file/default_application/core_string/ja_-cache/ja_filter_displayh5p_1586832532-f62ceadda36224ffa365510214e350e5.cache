@@ -1,0 +1,7 @@
+a:4:{s:18:"allowedsourceslist";s:24:"許可されるソース";s:22:"allowedsourceslistdesc";s:466:"ユーザがH5Pコンテンツを埋め込めるURLの一覧です。指定されない場合、すべてのURLはリンクのままにされて埋め込みH5Pコンテンツとしては表示されません。
+
+「 [id]」は外部ソースのH5PコンテンツIDのプレースホルダです。
+例えば以下のようになります:
+
+- H5P.com: https://[xxxxxx].h5p.com/content/[id]
+- Wordpress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]";s:10:"filtername";s:18:"H5Pを表示する";s:16:"privacy:metadata";s:84:"H5Pを表示するフィルタはいかなる個人データも保存しません。";}

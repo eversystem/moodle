@@ -1,0 +1,3 @@
+a:3:{s:20:"multilangupgradeinfo";s:373:"<p>multilangフィルタシンタックスはMoodle 1.8で変更されました。今後、<lang>タグはサポートされません。</p>
+<p>例: <span lang="en" class="multilang">Hello!</span><span lang="es" class="multilang">Hola!</span></p>
+<p> 既存のすべてのテキストに関するシンタックスをアップグレードしてもよろしいですか?</p>";s:10:"pluginname";s:33:"複数言語アップグレード";s:16:"privacy:metadata";s:102:"複数言語アップグレードプラグインはいかなる個人データも保存しません。";}

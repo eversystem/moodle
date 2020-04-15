@@ -1,0 +1,5 @@
+a:15:{s:8:"alwaysgs";s:72:"このサービスを評定同期およびカラム管理に使用する";s:21:"grade_synchronization";s:40:"IMS LTI課題および評定サービス";s:26:"grade_synchronization_help";s:647:"基本アウトカムサービスの代わりにIMS LTI課題および評定サービスを評定同期に使用するかどうか決定します。
+
+* **このサービスを使用しない** - 基本アウトカム機能および設定を使用します。
+* **このサービスを評定同期のみに使用する** - サービスは既存の評定表カラムに評点を追加しますが、新しいカラムを作成することはできません。
+* **このサービスを評定同期およびカラム管理に使用する** - サービスは評定表カラムを作成および更新して評定を管理することができます。";s:28:"ltiservice_gradebookservices";s:40:"IMS LTI課題および評定サービス";s:10:"modulename";s:9:"LTI評定";s:7:"nevergs";s:36:"このサービスを使用しない";s:9:"partialgs";s:54:"このサービスを評定同期のみに使用する";s:10:"pluginname";s:36:"LTI課題および評定サービス";s:32:"privacy:metadata:externalpurpose";s:63:"この情報は外部LTIプロバイダに送信されます。";s:25:"privacy:metadata:feedback";s:72:"このLTI活動でユーザが取得したフィードバックです。";s:22:"privacy:metadata:grade";s:66:"MoodleのこのLTI活動でユーザが取得した評点です。";s:25:"privacy:metadata:maxgrade";s:54:"このLTI活動で到達できる最大評点です。";s:29:"privacy:metadata:timemodified";s:45:"評点が更新された最終日時です。";s:23:"privacy:metadata:userid";s:59:"LTIコンシューマを使用するユーザのIDです。";s:11:"taskcleanup";s:69:"LTI課題および評定サービステーブルクリーンアップ";}
